@@ -10,11 +10,11 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <Image
-              src="/logo.svg"
+              src="/logo-light.png"
               alt="4Projetos"
               width={160}
               height={48}
-              className="mb-4 h-12 w-auto brightness-0 invert"
+              className="mb-4 h-12 w-auto"
             />
             <p className="mb-6 text-sm leading-relaxed text-white/40">
               Soluções completas em engenharia e regularização de imóveis em
