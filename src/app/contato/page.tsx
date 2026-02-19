@@ -7,7 +7,7 @@ export default function ContatoPage() {
   const [formState, setFormState] = useState({ nome: "", email: "", telefone: "", servico: "", mensagem: "" });
 
   return (
-    <div className="pt-20">
+    <div className="pt-[100px]">
       <section className="bg-navy py-20 sm:py-28">
         <div className="container-custom px-4 lg:px-8">
           <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-copper-light">Contato</p>

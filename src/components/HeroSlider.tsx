@@ -55,7 +55,7 @@ export function HeroSlider() {
   }, [emblaApi]);
 
   return (
-    <section className="relative mt-20">
+    <section className="relative mt-[100px]">
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((slide) => (
@@ -144,17 +144,17 @@ export function HeroSlider() {
       {/* Arrows */}
       <button
         onClick={scrollPrev}
-        className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-navy/10 p-3 text-navy backdrop-blur-sm transition-all hover:bg-navy/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
+        className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full border border-copper/40 bg-offwhite/90 p-3 text-navy shadow-md backdrop-blur-sm transition-all hover:bg-copper hover:text-white dark:border-copper/50 dark:bg-navy/80 dark:text-copper-light dark:hover:bg-copper dark:hover:text-white"
         aria-label="Slide anterior"
       >
-        <ChevronLeft className="h-5 w-5" />
+        <ChevronLeft className="h-6 w-6" />
       </button>
       <button
         onClick={scrollNext}
-        className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-navy/10 p-3 text-navy backdrop-blur-sm transition-all hover:bg-navy/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
+        className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full border border-copper/40 bg-offwhite/90 p-3 text-navy shadow-md backdrop-blur-sm transition-all hover:bg-copper hover:text-white dark:border-copper/50 dark:bg-navy/80 dark:text-copper-light dark:hover:bg-copper dark:hover:text-white"
         aria-label="Próximo slide"
       >
-        <ChevronRight className="h-5 w-5" />
+        <ChevronRight className="h-6 w-6" />
       </button>
 
       {/* Dots */}

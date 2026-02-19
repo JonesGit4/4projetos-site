@@ -26,8 +26,8 @@ export function Header() {
       className={cn(
         "fixed top-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "h-16 shadow-md backdrop-blur-xl bg-offwhite/80 dark:bg-navy/80 border-b border-copper-light/20 dark:border-navy-light/30"
-          : "h-20 backdrop-blur-md bg-offwhite/50 dark:bg-navy/50"
+          ? "h-[72px] shadow-md backdrop-blur-xl bg-offwhite/80 dark:bg-navy/80 border-b border-copper-light/20 dark:border-navy-light/30"
+          : "h-[100px] backdrop-blur-md bg-offwhite/50 dark:bg-navy/50"
       )}
     >
       <div className="container-custom flex h-full items-center justify-between px-4 lg:px-8">
@@ -40,7 +40,7 @@ export function Header() {
             height={72}
             className={cn(
               "w-auto transition-all duration-300",
-              scrolled ? "h-12 sm:h-14" : "h-16 sm:h-[72px]",
+              scrolled ? "h-14 sm:h-16" : "h-[72px] sm:h-[88px]",
               "dark:invert dark:brightness-90"
             )}
             priority
