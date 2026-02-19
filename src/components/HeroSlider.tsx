@@ -77,7 +77,7 @@ export function HeroSlider() {
                       alt="4Projetos"
                       width={600}
                       height={180}
-                      className="mb-8 h-36 w-auto dark:invert dark:brightness-90 sm:h-48 md:h-56 lg:h-72"
+                      className="mb-8 h-64 w-auto dark:invert dark:brightness-90 sm:h-80 md:h-[400px] lg:h-[480px]"
                       priority
                     />
 

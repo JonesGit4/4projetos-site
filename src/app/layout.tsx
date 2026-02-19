@@ -31,6 +31,10 @@ export const metadata: Metadata = {
     "REURB florianópolis",
     "4projetos",
   ],
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "4Projetos — Engenharia e Regularização",
     description:
@@ -53,8 +57,11 @@ export default function RootLayout({
       className={`${dmSerif.variable} ${dmSans.variable}`}
       suppressHydrationWarning
     >
-      {/* Inline script to prevent flash of wrong theme */}
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
+        <link rel="icon" href="/icon-512.png" sizes="512x512" type="image/png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
