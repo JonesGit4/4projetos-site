@@ -72,21 +72,19 @@ export function HeroSlider() {
 
                   <div className="container-custom relative z-10 flex flex-col items-center px-4 text-center lg:px-8">
                     {/* Logo FULL SIZE — transparent bg */}
-                    {/* Light mode: SVG (white bg blends into offwhite) */}
                     <Image
-                      src="/logo.svg"
+                      src="/logo-dark.png"
                       alt="4Projetos"
                       width={600}
-                      height={600}
+                      height={390}
                       className="mb-8 h-64 w-auto dark:hidden sm:h-80 md:h-[400px] lg:h-[480px]"
                       priority
                     />
-                    {/* Dark mode: transparent PNG */}
                     <Image
                       src="/logo-light.png"
                       alt="4Projetos"
                       width={600}
-                      height={600}
+                      height={390}
                       className="mb-8 hidden h-64 w-auto dark:block sm:h-80 md:h-[400px] lg:h-[480px]"
                       priority
                     />

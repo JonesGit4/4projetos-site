@@ -33,24 +33,22 @@ export function Header() {
       <div className="container-custom flex h-full items-center justify-between px-4 lg:px-8">
         {/* Logo — uses SVG on light (white bg blends), PNG on dark */}
         <Link href="/" className="flex-shrink-0">
-          {/* Light mode: SVG with white bg (blends into offwhite) */}
           <Image
-            src="/logo.svg"
+            src="/logo-dark.png"
             alt="4Projetos"
             width={240}
-            height={72}
+            height={156}
             className={cn(
               "w-auto transition-all duration-300 dark:hidden",
               scrolled ? "h-14 sm:h-16" : "h-[72px] sm:h-[88px]"
             )}
             priority
           />
-          {/* Dark mode: transparent PNG (light version) */}
           <Image
             src="/logo-light.png"
             alt="4Projetos"
             width={240}
-            height={72}
+            height={156}
             className={cn(
               "hidden w-auto transition-all duration-300 dark:block",
               scrolled ? "h-14 sm:h-16" : "h-[72px] sm:h-[88px]"
