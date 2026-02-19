@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const dmSerif = DM_Serif_Display({
   weight: "400",
@@ -47,12 +48,35 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${dmSerif.variable} ${dmSans.variable}`}>
-      <body className="min-h-screen bg-white">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
+    <html
+      lang="pt-BR"
+      className={`${dmSerif.variable} ${dmSans.variable}`}
+      suppressHydrationWarning
+    >
+      {/* Inline script to prevent flash of wrong theme */}
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var t = localStorage.getItem('theme');
+                  if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                  }
+                } catch(e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className="min-h-screen bg-white transition-colors dark:bg-gray-950">
+        <ThemeProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </ThemeProvider>
       </body>
     </html>
   );

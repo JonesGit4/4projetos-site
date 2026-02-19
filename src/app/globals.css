@@ -9,6 +9,9 @@
   body {
     @apply font-body text-brand-black antialiased;
   }
+  .dark body {
+    @apply text-gray-100;
+  }
   h1, h2, h3, h4 {
     @apply font-heading;
   }
@@ -16,10 +19,10 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-brand-dark hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-brand/50;
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-brand-dark hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-brand/50 dark:bg-brand-light dark:text-brand-dark dark:hover:bg-white;
   }
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-brand px-6 py-3 text-sm font-semibold text-brand transition-all hover:bg-brand hover:text-white focus:outline-none focus:ring-2 focus:ring-brand/50;
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-brand px-6 py-3 text-sm font-semibold text-brand transition-all hover:bg-brand hover:text-white focus:outline-none focus:ring-2 focus:ring-brand/50 dark:border-brand-light dark:text-brand-light dark:hover:bg-brand-light dark:hover:text-brand-dark;
   }
   .btn-whatsapp {
     @apply inline-flex items-center justify-center gap-2 rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-green-600 hover:shadow-xl;

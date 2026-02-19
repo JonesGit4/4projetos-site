@@ -18,24 +18,24 @@ const differentials = [
 
 export function AboutSection() {
   return (
-    <section className="section-padding">
+    <section className="section-padding dark:bg-gray-900/50">
       <div className="container-custom">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Left - Content */}
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand dark:text-brand-light">
               Sobre a 4Projetos
             </p>
-            <h2 className="mb-6 font-heading text-3xl text-brand-dark sm:text-4xl">
+            <h2 className="mb-6 font-heading text-3xl text-brand-dark sm:text-4xl dark:text-white">
               Engenharia de excelência em Florianópolis
             </h2>
-            <p className="mb-4 leading-relaxed text-gray-600">
-              A <strong>4Projetos</strong> é uma empresa de engenharia e
+            <p className="mb-4 leading-relaxed text-gray-600 dark:text-gray-400">
+              A <strong className="dark:text-white">4Projetos</strong> é uma empresa de engenharia e
               regularização de imóveis com sede em Florianópolis, Santa Catarina.
               Nossa equipe de engenheiros especializados oferece soluções
               completas — da regularização documental ao projeto executivo.
             </p>
-            <p className="mb-8 leading-relaxed text-gray-600">
+            <p className="mb-8 leading-relaxed text-gray-600 dark:text-gray-400">
               Com atendimento personalizado e foco em resultados, transformamos
               pendências em segurança jurídica e ideias em projetos técnicos de
               qualidade. Nosso compromisso é entregar clareza, agilidade e
@@ -46,8 +46,8 @@ export function AboutSection() {
             <div className="mb-8 grid gap-3 sm:grid-cols-2">
               {differentials.map((d) => (
                 <div key={d} className="flex items-start gap-2">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-brand" />
-                  <span className="text-sm text-gray-600">{d}</span>
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-brand dark:text-brand-light" />
+                  <span className="text-sm text-gray-600 dark:text-gray-400">{d}</span>
                 </div>
               ))}
             </div>
@@ -91,7 +91,7 @@ export function AboutSection() {
             </div>
 
             {/* Decorative */}
-            <div className="absolute -right-4 -top-4 -z-10 h-full w-full rounded-3xl border-2 border-brand-muted/30" />
+            <div className="absolute -right-4 -top-4 -z-10 h-full w-full rounded-3xl border-2 border-brand-muted/30 dark:border-brand/20" />
           </div>
         </div>
       </div>

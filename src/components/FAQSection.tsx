@@ -35,15 +35,15 @@ function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-100">
+    <div className="border-b border-gray-100 dark:border-gray-800">
       <button
         className="flex w-full items-center justify-between py-5 text-left"
         onClick={() => setOpen(!open)}
       >
-        <span className="pr-4 font-semibold text-brand-dark">{q}</span>
+        <span className="pr-4 font-semibold text-brand-dark dark:text-white">{q}</span>
         <ChevronDown
           className={cn(
-            "h-5 w-5 flex-shrink-0 text-brand transition-transform",
+            "h-5 w-5 flex-shrink-0 text-brand transition-transform dark:text-brand-light",
             open && "rotate-180"
           )}
         />
@@ -54,7 +54,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
           open ? "max-h-96 pb-5" : "max-h-0"
         )}
       >
-        <p className="leading-relaxed text-gray-500">{a}</p>
+        <p className="leading-relaxed text-gray-500 dark:text-gray-400">{a}</p>
       </div>
     </div>
   );
@@ -62,13 +62,13 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export function FAQSection() {
   return (
-    <section className="section-padding">
+    <section className="section-padding dark:bg-gray-900/50">
       <div className="container-custom max-w-3xl">
         <div className="mb-12 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand dark:text-brand-light">
             Perguntas Frequentes
           </p>
-          <h2 className="font-heading text-3xl text-brand-dark sm:text-4xl">
+          <h2 className="font-heading text-3xl text-brand-dark sm:text-4xl dark:text-white">
             Dúvidas comuns sobre nossos serviços
           </h2>
         </div>

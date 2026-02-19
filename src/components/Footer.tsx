@@ -5,7 +5,7 @@ import { regularizacao, engenharia } from "@/lib/services";
 
 export function Footer() {
   return (
-    <footer className="bg-brand-dark">
+    <footer className="bg-brand-dark dark:bg-gray-950">
       <div className="container-custom px-4 py-16 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
@@ -85,36 +85,11 @@ export function Footer() {
               Navegação
             </h4>
             <nav className="space-y-2">
-              <Link
-                href="/"
-                className="block text-sm text-white/50 transition-colors hover:text-brand-light"
-              >
-                Início
-              </Link>
-              <Link
-                href="/sobre"
-                className="block text-sm text-white/50 transition-colors hover:text-brand-light"
-              >
-                Sobre
-              </Link>
-              <Link
-                href="/cases"
-                className="block text-sm text-white/50 transition-colors hover:text-brand-light"
-              >
-                Cases
-              </Link>
-              <Link
-                href="/blog"
-                className="block text-sm text-white/50 transition-colors hover:text-brand-light"
-              >
-                Blog
-              </Link>
-              <Link
-                href="/contato"
-                className="block text-sm text-white/50 transition-colors hover:text-brand-light"
-              >
-                Contato
-              </Link>
+              <Link href="/" className="block text-sm text-white/50 transition-colors hover:text-brand-light">Início</Link>
+              <Link href="/sobre" className="block text-sm text-white/50 transition-colors hover:text-brand-light">Sobre</Link>
+              <Link href="/cases" className="block text-sm text-white/50 transition-colors hover:text-brand-light">Cases</Link>
+              <Link href="/blog" className="block text-sm text-white/50 transition-colors hover:text-brand-light">Blog</Link>
+              <Link href="/contato" className="block text-sm text-white/50 transition-colors hover:text-brand-light">Contato</Link>
             </nav>
           </div>
         </div>
