@@ -70,7 +70,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-white transition-colors dark:bg-gray-950">
+      <body className="min-h-screen bg-offwhite transition-colors dark:bg-navy">
         <ThemeProvider>
           <Header />
           <main>{children}</main>

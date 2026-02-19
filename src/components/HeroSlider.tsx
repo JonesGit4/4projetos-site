@@ -10,13 +10,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
   {
     id: 1,
-    // Slide 1: Logo FULL SIZE, fundo limpo/transparente
     type: "brand" as const,
     headline: "Engenharia e Regularização",
     subline: "Soluções completas para o seu imóvel em Florianópolis e região",
     cta: { text: "Conheça nossos serviços", href: "/servicos" },
     ctaSecondary: { text: "Fale conosco", href: "/contato" },
-    bgImage: null, // Fundo limpo — sem imagem
   },
   {
     id: 2,
@@ -46,22 +44,14 @@ export function HeroSlider() {
   ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const scrollPrev = useCallback(
-    () => emblaApi?.scrollPrev(),
-    [emblaApi]
-  );
-  const scrollNext = useCallback(
-    () => emblaApi?.scrollNext(),
-    [emblaApi]
-  );
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   useEffect(() => {
     if (!emblaApi) return;
     const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
     emblaApi.on("select", onSelect);
-    return () => {
-      emblaApi.off("select", onSelect);
-    };
+    return () => { emblaApi.off("select", onSelect); };
   }, [emblaApi]);
 
   return (
@@ -70,32 +60,32 @@ export function HeroSlider() {
         <div className="embla__container">
           {slides.map((slide) => (
             <div key={slide.id} className="embla__slide relative">
-              {/* === SLIDE 1: Logo Full Size, Fundo Limpo === */}
               {slide.type === "brand" ? (
-                <div className="relative flex min-h-[85vh] items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-brand-muted/20 dark:from-gray-950 dark:via-gray-900 dark:to-brand-dark sm:min-h-[90vh]">
-                  {/* Subtle geometric decoration */}
+                /* ══════ SLIDE 1 — Logo Full Size ══════ */
+                <div className="relative flex min-h-[85vh] items-center justify-center overflow-hidden bg-offwhite transition-colors dark:bg-navy sm:min-h-[90vh]">
+                  {/* Subtle decorations */}
                   <div className="absolute inset-0 overflow-hidden">
-                    <div className="absolute -right-40 -top-40 h-[600px] w-[600px] rounded-full border border-brand-muted/20 dark:border-brand/10" />
-                    <div className="absolute -left-20 bottom-0 h-[400px] w-[400px] rounded-full border border-brand-muted/15 dark:border-brand/5" />
-                    <div className="absolute left-1/2 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-brand-muted/10 dark:border-brand/5" />
+                    <div className="absolute -right-40 -top-40 h-[600px] w-[600px] rounded-full border border-copper/10 dark:border-copper/5" />
+                    <div className="absolute -left-20 bottom-0 h-[400px] w-[400px] rounded-full border border-copper/8 dark:border-copper/3" />
+                    <div className="absolute left-1/2 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-copper-light/10 dark:border-copper/5" />
                   </div>
 
                   <div className="container-custom relative z-10 flex flex-col items-center px-4 text-center lg:px-8">
-                    {/* Logo FULL SIZE */}
+                    {/* Logo FULL SIZE — transparent bg */}
                     <Image
                       src="/logo.svg"
                       alt="4Projetos"
                       width={600}
                       height={180}
-                      className="mb-8 h-32 w-auto dark:brightness-0 dark:invert sm:h-44 md:h-52 lg:h-64"
+                      className="mb-8 h-36 w-auto sm:h-48 md:h-56 lg:h-72"
                       priority
                     />
 
-                    <h1 className="mb-4 font-heading text-3xl leading-tight text-brand-dark dark:text-white sm:text-4xl md:text-5xl">
+                    <h1 className="mb-4 font-heading text-3xl leading-tight text-navy dark:text-offwhite sm:text-4xl md:text-5xl">
                       {slide.headline}
                     </h1>
 
-                    <p className="mb-8 max-w-xl text-lg leading-relaxed text-gray-500 dark:text-gray-400 sm:text-xl">
+                    <p className="mb-8 max-w-xl text-lg leading-relaxed text-charcoal/60 dark:text-gray-400 sm:text-xl">
                       {slide.subline}
                     </p>
 
@@ -104,10 +94,7 @@ export function HeroSlider() {
                         {slide.cta.text}
                       </Link>
                       {slide.ctaSecondary && (
-                        <Link
-                          href={slide.ctaSecondary.href}
-                          className="btn-secondary"
-                        >
+                        <Link href={slide.ctaSecondary.href} className="btn-secondary">
                           {slide.ctaSecondary.text}
                         </Link>
                       )}
@@ -115,46 +102,38 @@ export function HeroSlider() {
                   </div>
                 </div>
               ) : (
-                /* === OTHER SLIDES: Dark bg + image === */
-                <div className="relative flex min-h-[85vh] items-center overflow-hidden bg-brand-dark sm:min-h-[90vh]">
-                  {/* Background Image */}
+                /* ══════ OTHER SLIDES — Dark navy bg + image ══════ */
+                <div className="relative flex min-h-[85vh] items-center overflow-hidden bg-navy sm:min-h-[90vh]">
                   {slide.bgImage && (
                     <div className="absolute inset-0">
                       <Image
                         src={slide.bgImage}
                         alt=""
                         fill
-                        className="object-cover opacity-20"
+                        className="object-cover opacity-15"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-dark/70" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-navy/70" />
                     </div>
                   )}
 
-                  {/* Content */}
                   <div className="container-custom relative z-10 px-4 lg:px-8">
                     <div className="max-w-3xl">
-                      <h1 className="mb-4 font-heading text-4xl leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                      <h1 className="mb-4 font-heading text-4xl leading-tight text-offwhite sm:text-5xl md:text-6xl lg:text-7xl">
                         {slide.headline}
                       </h1>
-
-                      <p className="mb-8 max-w-xl text-lg leading-relaxed text-white/70 sm:text-xl">
+                      <p className="mb-8 max-w-xl text-lg leading-relaxed text-white/60 sm:text-xl">
                         {slide.subline}
                       </p>
-
-                      <div className="flex flex-col gap-4 sm:flex-row">
-                        <Link
-                          href={slide.cta.href}
-                          className="btn-primary !bg-brand-light !text-brand-dark hover:!bg-white"
-                        >
-                          {slide.cta.text}
-                        </Link>
-                      </div>
+                      <Link
+                        href={slide.cta.href}
+                        className="btn-primary"
+                      >
+                        {slide.cta.text}
+                      </Link>
                     </div>
                   </div>
 
-                  {/* Decorative element */}
-                  <div className="absolute -right-20 top-1/2 hidden h-[500px] w-[500px] -translate-y-1/2 rounded-full border border-brand-light/10 lg:block" />
-                  <div className="absolute -right-10 top-1/2 hidden h-[400px] w-[400px] -translate-y-1/2 rounded-full border border-brand-light/5 lg:block" />
+                  <div className="absolute -right-20 top-1/2 hidden h-[500px] w-[500px] -translate-y-1/2 rounded-full border border-copper/10 lg:block" />
                 </div>
               )}
             </div>
@@ -162,17 +141,17 @@ export function HeroSlider() {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Arrows */}
       <button
         onClick={scrollPrev}
-        className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/10 p-3 text-gray-700 backdrop-blur-sm transition-all hover:bg-black/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
+        className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-navy/10 p-3 text-navy backdrop-blur-sm transition-all hover:bg-navy/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
         aria-label="Slide anterior"
       >
         <ChevronLeft className="h-5 w-5" />
       </button>
       <button
         onClick={scrollNext}
-        className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/10 p-3 text-gray-700 backdrop-blur-sm transition-all hover:bg-black/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
+        className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-navy/10 p-3 text-navy backdrop-blur-sm transition-all hover:bg-navy/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
         aria-label="Próximo slide"
       >
         <ChevronRight className="h-5 w-5" />
@@ -185,8 +164,8 @@ export function HeroSlider() {
             key={i}
             className={`h-2 rounded-full transition-all ${
               i === selectedIndex
-                ? "w-8 bg-brand"
-                : "w-2 bg-gray-400/40 hover:bg-gray-400/60"
+                ? "w-8 bg-copper"
+                : "w-2 bg-navy/30 hover:bg-navy/50 dark:bg-white/30 dark:hover:bg-white/50"
             }`}
             onClick={() => emblaApi?.scrollTo(i)}
             aria-label={`Ir para slide ${i + 1}`}

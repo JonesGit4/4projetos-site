@@ -15,35 +15,34 @@ const faqs = [
   },
   {
     q: "Vocês atendem apenas em Florianópolis?",
-    a: "Nosso escritório está em Florianópolis, mas atendemos toda a região da Grande Florianópolis e demais cidades de Santa Catarina. Entre em contato para verificar a disponibilidade na sua região.",
+    a: "Nosso escritório está em Florianópolis, mas atendemos toda a região da Grande Florianópolis e demais cidades de Santa Catarina.",
   },
   {
     q: "Preciso de todos os projetos de engenharia de uma vez?",
-    a: "Não necessariamente. Você pode contratar projetos individuais conforme sua necessidade. Porém, oferecemos condições especiais para pacotes completos, o que garante compatibilização entre as disciplinas.",
+    a: "Não necessariamente. Você pode contratar projetos individuais. Porém, oferecemos condições especiais para pacotes completos, garantindo compatibilização entre as disciplinas.",
   },
   {
     q: "Como é feito o orçamento?",
-    a: "O orçamento é personalizado e gratuito. Analisamos a documentação do seu imóvel, entendemos suas necessidades e apresentamos uma proposta detalhada com valores, prazos e escopo de serviço.",
+    a: "O orçamento é personalizado e gratuito. Analisamos a documentação do seu imóvel, entendemos suas necessidades e apresentamos uma proposta detalhada com valores, prazos e escopo.",
   },
   {
     q: "Qual a diferença entre Averbação e Habite-se?",
-    a: "O Habite-se é o documento emitido pela prefeitura que atesta que a construção atende à legislação. A Averbação é o registro dessa construção na matrícula do imóvel junto ao Cartório de Registro de Imóveis. Normalmente, primeiro se obtém o Habite-se, depois a Averbação.",
+    a: "O Habite-se é emitido pela prefeitura, atestando que a construção atende à legislação. A Averbação é o registro na matrícula do imóvel junto ao Cartório. Normalmente, primeiro se obtém o Habite-se, depois a Averbação.",
   },
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
-
   return (
-    <div className="border-b border-gray-100 dark:border-gray-800">
+    <div className="border-b border-copper-light/20 dark:border-navy-light/30">
       <button
         className="flex w-full items-center justify-between py-5 text-left"
         onClick={() => setOpen(!open)}
       >
-        <span className="pr-4 font-semibold text-brand-dark dark:text-white">{q}</span>
+        <span className="pr-4 font-semibold text-navy dark:text-offwhite">{q}</span>
         <ChevronDown
           className={cn(
-            "h-5 w-5 flex-shrink-0 text-brand transition-transform dark:text-brand-light",
+            "h-5 w-5 flex-shrink-0 text-copper transition-transform",
             open && "rotate-180"
           )}
         />
@@ -54,7 +53,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
           open ? "max-h-96 pb-5" : "max-h-0"
         )}
       >
-        <p className="leading-relaxed text-gray-500 dark:text-gray-400">{a}</p>
+        <p className="leading-relaxed text-charcoal/60 dark:text-gray-400">{a}</p>
       </div>
     </div>
   );
@@ -62,13 +61,13 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export function FAQSection() {
   return (
-    <section className="section-padding dark:bg-gray-900/50">
+    <section className="section-padding bg-offwhite dark:bg-navy">
       <div className="container-custom max-w-3xl">
         <div className="mb-12 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand dark:text-brand-light">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-copper">
             Perguntas Frequentes
           </p>
-          <h2 className="font-heading text-3xl text-brand-dark sm:text-4xl dark:text-white">
+          <h2 className="font-heading text-3xl text-navy sm:text-4xl dark:text-offwhite">
             Dúvidas comuns sobre nossos serviços
           </h2>
         </div>

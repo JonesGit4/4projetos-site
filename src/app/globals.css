@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply font-body text-brand-black antialiased;
+    @apply font-body text-charcoal antialiased;
   }
   .dark body {
     @apply text-gray-100;
@@ -18,14 +18,16 @@
 }
 
 @layer components {
+  /* Primary CTA — copper background */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-brand-dark hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-brand/50 dark:bg-brand-light dark:text-brand-dark dark:hover:bg-white;
+    @apply inline-flex items-center justify-center gap-2 rounded-btn bg-copper px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-copper-light hover:text-navy hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-copper/50;
   }
+  /* Secondary CTA — navy outline */
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-brand px-6 py-3 text-sm font-semibold text-brand transition-all hover:bg-brand hover:text-white focus:outline-none focus:ring-2 focus:ring-brand/50 dark:border-brand-light dark:text-brand-light dark:hover:bg-brand-light dark:hover:text-brand-dark;
+    @apply inline-flex items-center justify-center gap-2 rounded-btn border-2 border-navy px-6 py-3 text-sm font-semibold text-navy transition-all hover:bg-navy hover:text-white focus:outline-none focus:ring-2 focus:ring-navy/50 dark:border-copper-light dark:text-copper-light dark:hover:bg-copper dark:hover:text-white;
   }
   .btn-whatsapp {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-green-600 hover:shadow-xl;
+    @apply inline-flex items-center justify-center gap-2 rounded-btn bg-green-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-green-600 hover:shadow-xl;
   }
   .section-padding {
     @apply px-4 py-16 sm:px-6 md:py-24 lg:px-8;

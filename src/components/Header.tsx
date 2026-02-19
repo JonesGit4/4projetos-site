@@ -26,21 +26,22 @@ export function Header() {
       className={cn(
         "fixed top-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "h-16 border-b border-gray-200/50 bg-white/80 shadow-sm backdrop-blur-xl dark:border-gray-700/50 dark:bg-gray-900/80"
-          : "h-20 bg-white/60 backdrop-blur-md dark:bg-gray-900/60"
+          ? "h-16 shadow-md backdrop-blur-xl bg-offwhite/80 dark:bg-navy/80 border-b border-copper-light/20 dark:border-navy-light/30"
+          : "h-20 backdrop-blur-md bg-offwhite/50 dark:bg-navy/50"
       )}
     >
       <div className="container-custom flex h-full items-center justify-between px-4 lg:px-8">
-        {/* Logo — bigger, fills available area */}
+        {/* Logo — BIGGER, fills area */}
         <Link href="/" className="flex-shrink-0">
           <Image
             src="/logo.svg"
             alt="4Projetos"
-            width={200}
-            height={60}
+            width={240}
+            height={72}
             className={cn(
-              "w-auto transition-all duration-300 dark:brightness-0 dark:invert",
-              scrolled ? "h-10" : "h-14"
+              "w-auto transition-all duration-300",
+              scrolled ? "h-11 sm:h-12" : "h-14 sm:h-16",
+              "dark:brightness-110 dark:contrast-110"
             )}
             priority
           />
@@ -50,7 +51,7 @@ export function Header() {
         <nav className="hidden items-center gap-1 lg:flex">
           <Link
             href="/"
-            className="rounded-lg px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100/60 hover:text-brand dark:text-gray-300 dark:hover:bg-gray-800/60 dark:hover:text-brand-light"
+            className="rounded-btn px-4 py-2 text-sm font-medium text-navy transition-colors hover:text-copper dark:text-copper-light dark:hover:text-white"
           >
             Início
           </Link>
@@ -62,7 +63,7 @@ export function Header() {
             onMouseLeave={() => setServicesOpen(false)}
           >
             <button
-              className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100/60 hover:text-brand dark:text-gray-300 dark:hover:bg-gray-800/60 dark:hover:text-brand-light"
+              className="flex items-center gap-1 rounded-btn px-4 py-2 text-sm font-medium text-navy transition-colors hover:text-copper dark:text-copper-light dark:hover:text-white"
               onClick={() => setServicesOpen(!servicesOpen)}
             >
               Serviços
@@ -74,14 +75,12 @@ export function Header() {
               />
             </button>
 
-            {/* Mega Menu Dropdown */}
             {servicesOpen && (
               <div className="absolute -left-20 top-full pt-2">
-                <div className="w-[680px] rounded-2xl border border-gray-100 bg-white/95 p-6 shadow-2xl backdrop-blur-xl dark:border-gray-700 dark:bg-gray-900/95">
+                <div className="w-[680px] rounded-lg border border-copper-light/20 bg-offwhite/95 p-6 shadow-2xl backdrop-blur-xl dark:border-navy-light/30 dark:bg-navy/95">
                   <div className="grid grid-cols-2 gap-8">
-                    {/* Regularização Column */}
                     <div>
-                      <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-brand dark:text-brand-light">
+                      <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-copper dark:text-copper-light">
                         Regularização
                       </h3>
                       <div className="space-y-1">
@@ -89,7 +88,7 @@ export function Header() {
                           <Link
                             key={s.slug}
                             href={`/servicos/${s.slug}`}
-                            className="block rounded-lg px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-brand-muted/30 hover:text-brand-dark dark:text-gray-400 dark:hover:bg-brand/10 dark:hover:text-brand-light"
+                            className="block rounded-btn px-3 py-2 text-sm text-charcoal/70 transition-colors hover:bg-copper/10 hover:text-navy dark:text-gray-400 dark:hover:bg-copper/10 dark:hover:text-copper-light"
                             onClick={() => setServicesOpen(false)}
                           >
                             {s.title}
@@ -98,9 +97,8 @@ export function Header() {
                       </div>
                     </div>
 
-                    {/* Engenharia Column */}
                     <div>
-                      <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-brand dark:text-brand-light">
+                      <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-copper dark:text-copper-light">
                         Engenharia
                       </h3>
                       <div className="space-y-1">
@@ -108,7 +106,7 @@ export function Header() {
                           <Link
                             key={s.slug}
                             href={`/servicos/${s.slug}`}
-                            className="block rounded-lg px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-brand-muted/30 hover:text-brand-dark dark:text-gray-400 dark:hover:bg-brand/10 dark:hover:text-brand-light"
+                            className="block rounded-btn px-3 py-2 text-sm text-charcoal/70 transition-colors hover:bg-copper/10 hover:text-navy dark:text-gray-400 dark:hover:bg-copper/10 dark:hover:text-copper-light"
                             onClick={() => setServicesOpen(false)}
                           >
                             {s.title}
@@ -118,7 +116,7 @@ export function Header() {
                           <Link
                             key={s.slug}
                             href={`/servicos/${s.slug}`}
-                            className="block rounded-lg px-3 py-2 pl-6 text-xs text-gray-400 transition-colors hover:bg-brand-muted/30 hover:text-brand-dark dark:text-gray-500 dark:hover:bg-brand/10 dark:hover:text-brand-light"
+                            className="block rounded-btn px-3 py-2 pl-6 text-xs text-charcoal/50 transition-colors hover:bg-copper/10 hover:text-navy dark:text-gray-500 dark:hover:bg-copper/10 dark:hover:text-copper-light"
                             onClick={() => setServicesOpen(false)}
                           >
                             {s.title}
@@ -128,14 +126,13 @@ export function Header() {
                     </div>
                   </div>
 
-                  {/* CTA Bar */}
-                  <div className="mt-5 flex items-center justify-between rounded-xl bg-brand-dark px-5 py-3 dark:bg-brand/20">
-                    <p className="text-sm text-white/80 dark:text-gray-300">
+                  <div className="mt-5 flex items-center justify-between rounded-btn bg-navy px-5 py-3 dark:bg-navy-light">
+                    <p className="text-sm text-white/70">
                       Não sabe por onde começar?
                     </p>
                     <Link
                       href="/contato"
-                      className="text-sm font-semibold text-brand-light transition-colors hover:text-white"
+                      className="text-sm font-semibold text-copper-light transition-colors hover:text-white"
                       onClick={() => setServicesOpen(false)}
                     >
                       Fale conosco →
@@ -146,50 +143,30 @@ export function Header() {
             )}
           </div>
 
-          <Link
-            href="/sobre"
-            className="rounded-lg px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100/60 hover:text-brand dark:text-gray-300 dark:hover:bg-gray-800/60 dark:hover:text-brand-light"
-          >
-            Sobre
-          </Link>
-          <Link
-            href="/cases"
-            className="rounded-lg px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100/60 hover:text-brand dark:text-gray-300 dark:hover:bg-gray-800/60 dark:hover:text-brand-light"
-          >
-            Cases
-          </Link>
-          <Link
-            href="/blog"
-            className="rounded-lg px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100/60 hover:text-brand dark:text-gray-300 dark:hover:bg-gray-800/60 dark:hover:text-brand-light"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/contato"
-            className="rounded-lg px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100/60 hover:text-brand dark:text-gray-300 dark:hover:bg-gray-800/60 dark:hover:text-brand-light"
-          >
-            Contato
-          </Link>
+          {["Sobre", "Cases", "Blog", "Contato"].map((item) => (
+            <Link
+              key={item}
+              href={`/${item.toLowerCase()}`}
+              className="rounded-btn px-4 py-2 text-sm font-medium text-navy transition-colors hover:text-copper dark:text-copper-light dark:hover:text-white"
+            >
+              {item}
+            </Link>
+          ))}
         </nav>
 
         {/* Desktop CTA + Theme Toggle */}
         <div className="hidden items-center gap-3 lg:flex">
-          {/* Theme toggle */}
           <button
             onClick={toggleTheme}
-            className="rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100/60 hover:text-brand dark:text-gray-400 dark:hover:bg-gray-800/60 dark:hover:text-brand-light"
+            className="rounded-full p-2 text-navy/60 transition-colors hover:text-copper dark:text-copper-light/60 dark:hover:text-copper-light"
             aria-label="Alternar tema"
           >
-            {theme === "dark" ? (
-              <Sun className="h-5 w-5" />
-            ) : (
-              <Moon className="h-5 w-5" />
-            )}
+            {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </button>
 
           <a
             href="tel:+5548996791427"
-            className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-brand dark:text-gray-400 dark:hover:text-brand-light"
+            className="flex items-center gap-2 text-sm font-medium text-navy/70 hover:text-copper dark:text-gray-400 dark:hover:text-copper-light"
           >
             <Phone className="h-4 w-4" />
             (48) 99679-1427
@@ -199,49 +176,40 @@ export function Header() {
           </Link>
         </div>
 
-        {/* Mobile: Theme toggle + Hamburger */}
+        {/* Mobile: Theme + Hamburger */}
         <div className="flex items-center gap-2 lg:hidden">
           <button
             onClick={toggleTheme}
-            className="rounded-lg p-2 text-gray-500 dark:text-gray-400"
+            className="rounded-full p-2 text-navy/60 dark:text-copper-light/60"
             aria-label="Alternar tema"
           >
-            {theme === "dark" ? (
-              <Sun className="h-5 w-5" />
-            ) : (
-              <Moon className="h-5 w-5" />
-            )}
+            {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </button>
           <button
-            className="rounded-lg p-2 text-gray-700 dark:text-gray-300"
+            className="rounded-btn p-2 text-navy dark:text-copper-light"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menu"
           >
-            {mobileOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="border-t border-gray-100 bg-white/95 backdrop-blur-xl dark:border-gray-700 dark:bg-gray-900/95 lg:hidden">
+        <div className="border-t border-copper-light/20 bg-offwhite/95 backdrop-blur-xl dark:border-navy-light/30 dark:bg-navy/95 lg:hidden">
           <nav className="container-custom space-y-1 px-4 py-4">
             <Link
               href="/"
-              className="block rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
+              className="block rounded-btn px-4 py-3 text-sm font-medium text-navy hover:bg-copper/10 dark:text-copper-light dark:hover:bg-copper/10"
               onClick={() => setMobileOpen(false)}
             >
               Início
             </Link>
 
-            {/* Mobile Services Accordion */}
             <div>
               <button
-                className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
+                className="flex w-full items-center justify-between rounded-btn px-4 py-3 text-sm font-medium text-navy hover:bg-copper/10 dark:text-copper-light dark:hover:bg-copper/10"
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               >
                 Serviços
@@ -253,21 +221,21 @@ export function Header() {
                 />
               </button>
               {mobileServicesOpen && (
-                <div className="ml-4 space-y-0.5 border-l-2 border-brand-muted pl-4 dark:border-brand/30">
-                  <p className="pb-1 pt-2 text-xs font-bold uppercase tracking-wider text-brand dark:text-brand-light">
+                <div className="ml-4 space-y-0.5 border-l-2 border-copper/30 pl-4">
+                  <p className="pb-1 pt-2 text-xs font-bold uppercase tracking-wider text-copper">
                     Regularização
                   </p>
                   {regularizacao.map((s) => (
                     <Link
                       key={s.slug}
                       href={`/servicos/${s.slug}`}
-                      className="block rounded-lg px-3 py-2 text-sm text-gray-600 hover:text-brand dark:text-gray-400 dark:hover:text-brand-light"
+                      className="block rounded-btn px-3 py-2 text-sm text-charcoal/70 hover:text-copper dark:text-gray-400 dark:hover:text-copper-light"
                       onClick={() => setMobileOpen(false)}
                     >
                       {s.title}
                     </Link>
                   ))}
-                  <p className="pb-1 pt-3 text-xs font-bold uppercase tracking-wider text-brand dark:text-brand-light">
+                  <p className="pb-1 pt-3 text-xs font-bold uppercase tracking-wider text-copper">
                     Engenharia
                   </p>
                   {[...engenharia, ...subServices].map((s) => (
@@ -275,8 +243,8 @@ export function Header() {
                       key={s.slug}
                       href={`/servicos/${s.slug}`}
                       className={cn(
-                        "block rounded-lg px-3 py-2 text-sm text-gray-600 hover:text-brand dark:text-gray-400 dark:hover:text-brand-light",
-                        s.isSubService && "pl-6 text-xs text-gray-400"
+                        "block rounded-btn px-3 py-2 text-sm text-charcoal/70 hover:text-copper dark:text-gray-400 dark:hover:text-copper-light",
+                        s.isSubService && "pl-6 text-xs opacity-70"
                       )}
                       onClick={() => setMobileOpen(false)}
                     >
@@ -287,36 +255,18 @@ export function Header() {
               )}
             </div>
 
-            <Link
-              href="/sobre"
-              className="block rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
-              onClick={() => setMobileOpen(false)}
-            >
-              Sobre
-            </Link>
-            <Link
-              href="/cases"
-              className="block rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
-              onClick={() => setMobileOpen(false)}
-            >
-              Cases
-            </Link>
-            <Link
-              href="/blog"
-              className="block rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
-              onClick={() => setMobileOpen(false)}
-            >
-              Blog
-            </Link>
-            <Link
-              href="/contato"
-              className="block rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
-              onClick={() => setMobileOpen(false)}
-            >
-              Contato
-            </Link>
+            {["Sobre", "Cases", "Blog", "Contato"].map((item) => (
+              <Link
+                key={item}
+                href={`/${item.toLowerCase()}`}
+                className="block rounded-btn px-4 py-3 text-sm font-medium text-navy hover:bg-copper/10 dark:text-copper-light dark:hover:bg-copper/10"
+                onClick={() => setMobileOpen(false)}
+              >
+                {item}
+              </Link>
+            ))}
 
-            <div className="border-t border-gray-100 pt-4 dark:border-gray-700">
+            <div className="border-t border-copper-light/20 pt-4 dark:border-navy-light/30">
               <Link
                 href="/contato"
                 className="btn-primary w-full"
@@ -326,7 +276,7 @@ export function Header() {
               </Link>
               <a
                 href="tel:+5548996791427"
-                className="mt-3 flex items-center justify-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+                className="mt-3 flex items-center justify-center gap-2 text-sm font-medium text-navy/70 dark:text-gray-400"
               >
                 <Phone className="h-4 w-4" />
                 (48) 99679-1427
