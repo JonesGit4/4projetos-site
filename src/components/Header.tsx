@@ -207,7 +207,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="border-t border-copper-light/20 bg-offwhite/95 backdrop-blur-xl dark:border-navy-light/30 dark:bg-navy/95 lg:hidden">
+        <div className="max-h-[calc(100dvh-72px)] overflow-y-auto border-t border-copper-light/20 bg-offwhite/95 backdrop-blur-xl dark:border-navy-light/30 dark:bg-navy/95 lg:hidden">
           <nav className="container-custom space-y-1 px-4 py-4">
             <Link
               href="/"
