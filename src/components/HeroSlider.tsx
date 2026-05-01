@@ -40,7 +40,7 @@ const slides = [
 
 export function HeroSlider() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 7000, stopOnInteraction: false }),
+    Autoplay({ delay: 12000, stopOnInteraction: false }),
   ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
 

@@ -16,18 +16,18 @@ function ServiceCard({ service }: { service: Service }) {
   return (
     <Link
       href={`/servicos/${service.slug}`}
-      className="group relative rounded-lg border border-copper-light/20 bg-white p-6 transition-all hover:border-copper/40 hover:shadow-lg dark:border-navy-light/30 dark:bg-navy-light/20 dark:hover:border-copper/40"
+      className="group relative rounded-lg border border-copper-light/20 bg-white p-6 transition-all hover:border-brand hover:bg-brand hover:shadow-lg dark:border-navy-light/30 dark:bg-navy-light/20 dark:hover:border-brand-light dark:hover:bg-offwhite"
     >
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-copper/10 text-copper transition-colors group-hover:bg-copper group-hover:text-white dark:bg-copper/10 dark:text-copper-light">
+      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-copper/10 text-copper transition-colors group-hover:bg-white/20 group-hover:text-white dark:bg-copper/10 dark:text-copper-light dark:group-hover:bg-brand/15 dark:group-hover:text-brand">
         <Icon className="h-6 w-6" />
       </div>
-      <h3 className="mb-2 text-lg font-semibold text-navy group-hover:text-copper dark:text-offwhite dark:group-hover:text-copper-light">
+      <h3 className="mb-2 text-lg font-semibold text-navy transition-colors group-hover:text-white dark:text-offwhite dark:group-hover:text-navy">
         {service.title}
       </h3>
-      <p className="text-sm leading-relaxed text-charcoal/60 line-clamp-3 dark:text-gray-400">
+      <p className="text-sm leading-relaxed text-charcoal/60 transition-colors line-clamp-3 group-hover:text-white/80 dark:text-gray-400 dark:group-hover:text-charcoal/60">
         {service.description}
       </p>
-      <div className="mt-4 flex items-center gap-1 text-sm font-medium text-copper opacity-0 transition-opacity group-hover:opacity-100 dark:text-copper-light">
+      <div className="mt-4 flex items-center gap-1 text-sm font-medium text-copper opacity-0 transition-opacity group-hover:text-white group-hover:opacity-100 dark:text-copper-light dark:group-hover:text-brand">
         Saiba mais <ArrowRight className="h-4 w-4" />
       </div>
     </Link>
