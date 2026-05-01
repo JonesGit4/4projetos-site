@@ -3,8 +3,17 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { CTASection } from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "Serviços — 4Projetos | Engenharia e Regularização",
-  description: "Conheça todos os serviços de engenharia e regularização de imóveis oferecidos pela 4Projetos em Florianópolis.",
+  title: "Serviços de Engenharia e Regularização de Imóveis — Florianópolis",
+  description:
+    "Conheça todos os serviços de engenharia e regularização de imóveis em Florianópolis: Habite-se, REURB, averbação, projetos arquitetônicos, estruturais, elétricos e mais.",
+  keywords: [
+    "serviços engenharia florianópolis",
+    "regularização de imóveis",
+    "habite-se",
+    "projeto estrutural",
+    "projeto arquitetônico",
+  ],
+  alternates: { canonical: "https://4projetos.com.br/servicos" },
 };
 
 export default function ServicosPage() {

@@ -27,8 +27,10 @@ export async function generateMetadata({
   const service = services.find((s) => s.slug === slug);
   if (!service) return { title: "Serviço não encontrado" };
   return {
-    title: `${service.title} — 4Projetos | Florianópolis`,
-    description: service.description,
+    title: `${service.title} em Florianópolis — 4Projetos`,
+    description: `${service.description} Atendemos Florianópolis e região. Orçamento gratuito.`,
+    keywords: [service.title.toLowerCase(), "florianópolis", service.category === "regularizacao" ? "regularização de imóveis" : "projetos de engenharia"],
+    alternates: { canonical: `https://4projetos.com.br/servicos/${slug}` },
   };
 }
 

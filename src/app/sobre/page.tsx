@@ -3,8 +3,11 @@ import { Users, Target, Shield, Clock } from "lucide-react";
 import { CTASection } from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "Sobre — 4Projetos | Engenharia e Regularização em Florianópolis",
-  description: "Conheça a 4Projetos: equipe multidisciplinar de engenheiros especializados em regularização e projetos em Florianópolis.",
+  title: "Sobre a 4Projetos — Empresa de Engenharia em Florianópolis",
+  description:
+    "Conheça a 4Projetos: equipe multidisciplinar de engenheiros especializados em regularização de imóveis e projetos de engenharia em Florianópolis e região.",
+  keywords: ["empresa de engenharia florianópolis", "engenheiros florianópolis", "4projetos sobre"],
+  alternates: { canonical: "https://4projetos.com.br/sobre" },
 };
 
 export default function SobrePage() {

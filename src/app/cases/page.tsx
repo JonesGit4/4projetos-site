@@ -3,8 +3,10 @@ import { Construction } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cases — 4Projetos | Projetos Realizados",
-  description: "Conheça os projetos de engenharia e regularização realizados pela 4Projetos.",
+  title: "Cases — Projetos Realizados | 4Projetos Florianópolis",
+  description:
+    "Conheça os projetos de engenharia e regularização de imóveis realizados pela 4Projetos em Florianópolis e região.",
+  alternates: { canonical: "https://4projetos.com.br/cases" },
 };
 
 export default function CasesPage() {
