@@ -23,8 +23,15 @@ export default function ContatoPage() {
               <h2 className="mb-6 font-heading text-2xl text-navy dark:text-offwhite">Solicite um orçamento</h2>
               <form
                 className="space-y-5"
-                onSubmit={(e) => {
+                onSubmit={async (e) => {
                   e.preventDefault();
+                  try {
+                    await fetch("https://n8n.duobro.com.br/webhook/4projetos-form", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json", "x-api-key": "44fc90c0f21c41238fd6006d39fa5b7d" },
+                      body: JSON.stringify({ name: formState.nome, phone: formState.telefone, email: formState.email, service: formState.servico, message: formState.mensagem }),
+                    });
+                  } catch {}
                   const msg = `Olá! Meu nome é ${formState.nome}. ${formState.servico ? `Interesse em: ${formState.servico}. ` : ""}${formState.mensagem}`;
                   window.open(`https://wa.me/5548996791427?text=${encodeURIComponent(msg)}`, "_blank");
                 }}
