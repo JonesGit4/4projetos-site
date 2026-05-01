@@ -41,20 +41,20 @@ export default function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group rounded-lg border border-copper-light/20 bg-white p-6 transition-all hover:border-copper hover:shadow-lg dark:border-navy-light/30 dark:bg-navy-light/20 dark:hover:border-copper"
+                className="group rounded-lg border border-navy/80 bg-navy p-6 transition-all hover:border-copper-light/20 hover:bg-white hover:shadow-lg dark:border-brand/80 dark:bg-brand dark:hover:border-brand-light/30 dark:hover:bg-white"
               >
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-copper">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-copper-light transition-colors group-hover:text-copper dark:text-white/70 dark:group-hover:text-brand">
                   {post.category === "regularizacao"
                     ? "Regularização"
                     : "Engenharia"}
                 </p>
-                <h2 className="mb-3 font-heading text-xl text-navy transition-colors group-hover:text-copper dark:text-offwhite">
+                <h2 className="mb-3 font-heading text-xl text-white transition-colors group-hover:text-navy dark:text-white dark:group-hover:text-navy">
                   {post.title}
                 </h2>
-                <p className="mb-4 line-clamp-3 text-sm leading-relaxed text-charcoal/60 dark:text-gray-400">
+                <p className="mb-4 line-clamp-3 text-sm leading-relaxed text-white/70 transition-colors group-hover:text-charcoal/60 dark:text-white/70 dark:group-hover:text-charcoal/60">
                   {post.description}
                 </p>
-                <div className="flex items-center justify-between text-xs text-charcoal/40 dark:text-gray-500">
+                <div className="flex items-center justify-between text-xs text-white/50 transition-colors group-hover:text-charcoal/40 dark:text-white/50 dark:group-hover:text-charcoal/40">
                   <div className="flex items-center gap-3">
                     <span className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" />
@@ -68,7 +68,7 @@ export default function BlogPage() {
                       <Clock className="h-3 w-3" /> {post.readTime}
                     </span>
                   </div>
-                  <ArrowRight className="h-4 w-4 text-copper transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="h-4 w-4 text-white/80 transition-all group-hover:translate-x-1 group-hover:text-copper dark:text-white/80 dark:group-hover:text-brand" />
                 </div>
               </Link>
             ))}

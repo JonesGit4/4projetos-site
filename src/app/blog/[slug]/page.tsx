@@ -46,7 +46,7 @@ function renderContent(content: string) {
   function flushList() {
     if (listItems.length > 0) {
       elements.push(
-        <ul key={`ul-${elements.length}`} className="my-4 list-disc space-y-2 pl-6 text-charcoal/70 dark:text-gray-400">
+        <ul key={`ul-${elements.length}`} className="my-4 list-disc space-y-2 pl-6 text-charcoal/70 dark:text-offwhite/60">
           {listItems.map((li, i) => (
             <li key={i} dangerouslySetInnerHTML={{ __html: formatInline(li) }} />
           ))}
@@ -76,7 +76,7 @@ function renderContent(content: string) {
               {body.map((row, ri) => (
                 <tr key={ri} className="border-b border-copper-light/10 dark:border-navy-light/20">
                   {row.map((cell, ci) => (
-                    <td key={ci} className="px-3 py-2 text-charcoal/70 dark:text-gray-400" dangerouslySetInnerHTML={{ __html: formatInline(cell) }} />
+                    <td key={ci} className="px-3 py-2 text-charcoal/70 dark:text-offwhite/60" dangerouslySetInnerHTML={{ __html: formatInline(cell) }} />
                   ))}
                 </tr>
               ))}
@@ -137,7 +137,7 @@ function renderContent(content: string) {
       elements.push(
         <p
           key={`p-${i}`}
-          className="my-3 leading-relaxed text-charcoal/70 dark:text-gray-400"
+          className="my-3 leading-relaxed text-charcoal/70 dark:text-offwhite/60"
           dangerouslySetInnerHTML={{ __html: formatInline(line) }}
         />
       );
@@ -249,7 +249,7 @@ export default async function BlogPostPage({
                         <Link
                           key={r.slug}
                           href={`/blog/${r.slug}`}
-                          className="block text-sm text-charcoal/60 transition-colors hover:text-navy dark:text-gray-400 dark:hover:text-copper-light"
+                          className="block text-sm text-charcoal/60 transition-colors hover:text-navy dark:text-offwhite/60 dark:hover:text-copper-light"
                         >
                           {r.title}
                         </Link>
