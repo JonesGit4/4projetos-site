@@ -2,13 +2,14 @@ import Link from "next/link";
 import {
   FileCheck, Scale, Landmark, Receipt, BookOpen, Building2, Building, Ruler,
   PenTool, Droplets, Blocks, Zap, ShieldCheck, Lightbulb, Volume2, Thermometer, Map,
-  ArrowRight,
+  ArrowRight, ClipboardCheck, Search, Sofa, FileText, UserCheck, FileEdit,
 } from "lucide-react";
 import { regularizacao, engenharia, type Service } from "@/lib/services";
 
 const iconMap: Record<string, React.ElementType> = {
   FileCheck, Scale, Landmark, Receipt, BookOpen, Building2, Building, Ruler,
   PenTool, Droplets, Blocks, Zap, ShieldCheck, Lightbulb, Volume2, Thermometer, Map,
+  ClipboardCheck, Search, Sofa, FileText, UserCheck, FileEdit,
 };
 
 function ServiceCard({ service }: { service: Service }) {

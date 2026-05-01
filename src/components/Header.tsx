@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown, Phone, Sun, Moon } from "lucide-react";
-import { regularizacao, engenharia, subServices } from "@/lib/services";
+import { regularizacao, engenharia, subServices, type Service } from "@/lib/services";
 import { useTheme } from "@/components/ThemeProvider";
 import { cn } from "@/lib/utils";
 

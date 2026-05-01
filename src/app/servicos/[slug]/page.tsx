@@ -5,13 +5,14 @@ import {
   FileCheck, Scale, Landmark, Receipt, BookOpen, Building2, Building, Ruler,
   PenTool, Droplets, Blocks, Zap, ShieldCheck, Lightbulb, Volume2, Thermometer,
   Map, Box, Sofa, Grid3x3, ScanLine, ArrowLeft, ArrowRight, Phone,
+  ClipboardCheck, Search, FileText, UserCheck, FileEdit, Info,
 } from "lucide-react";
-import { services, subServices } from "@/lib/services";
+import { services, subServices, getServiceSteps, getComplementaryServices } from "@/lib/services";
 
 const iconMap: Record<string, React.ElementType> = {
   FileCheck, Scale, Landmark, Receipt, BookOpen, Building2, Building, Ruler,
   PenTool, Droplets, Blocks, Zap, ShieldCheck, Lightbulb, Volume2, Thermometer,
-  Map, Box, Sofa, Grid3x3, ScanLine,
+  Map, Box, Sofa, Grid3x3, ScanLine, ClipboardCheck, Search, FileText, UserCheck, FileEdit,
 };
 
 export async function generateStaticParams() {
@@ -44,6 +45,8 @@ export default async function ServicePage({
   if (!service) notFound();
 
   const Icon = iconMap[service.icon] || FileCheck;
+  const steps = getServiceSteps(service);
+  const complementary = getComplementaryServices(service);
   const relatedSubs = subServices.filter((s) => s.parentSlug === slug);
   const categoryServices = services.filter(
     (s) => s.category === service.category && s.slug !== slug && !s.isSubService
@@ -81,14 +84,18 @@ export default async function ServicePage({
               <div className="prose prose-lg max-w-none">
                 <p className="text-xl leading-relaxed text-charcoal/70 dark:text-gray-400">{service.description}</p>
 
+                {service.obs && (
+                  <div className="mt-6 flex items-start gap-3 rounded-lg border border-copper/30 bg-copper/5 p-4 dark:border-copper/20 dark:bg-copper/5">
+                    <Info className="mt-0.5 h-5 w-5 flex-shrink-0 text-copper" />
+                    <p className="text-sm font-medium text-charcoal/80 dark:text-gray-300">
+                      <span className="font-bold">OBS:</span> {service.obs}
+                    </p>
+                  </div>
+                )}
+
                 <h2 className="mt-10 font-heading text-2xl text-navy dark:text-offwhite">Como funciona</h2>
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                  {[
-                    { step: "01", title: "Consulta Inicial", desc: "Analisamos sua documentação e entendemos suas necessidades." },
-                    { step: "02", title: "Proposta Técnica", desc: "Orçamento detalhado com prazos, escopo e valores transparentes." },
-                    { step: "03", title: "Execução", desc: "Equipe técnica desenvolve o trabalho com acompanhamento contínuo." },
-                    { step: "04", title: "Entrega", desc: "Documentação completa e acompanhamento até aprovação final." },
-                  ].map((s) => (
+                  {steps.map((s) => (
                     <div key={s.step} className="rounded-lg border border-copper-light/20 p-5 dark:border-navy-light/30">
                       <span className="text-3xl font-bold text-copper/30">{s.step}</span>
                       <h3 className="mt-2 font-semibold text-navy dark:text-offwhite">{s.title}</h3>
@@ -97,9 +104,31 @@ export default async function ServicePage({
                   ))}
                 </div>
 
-                {relatedSubs.length > 0 && (
+                {/* Complementary services from document cross-links */}
+                {complementary.length > 0 && (
                   <div className="mt-10">
                     <h2 className="font-heading text-2xl text-navy dark:text-offwhite">Serviços Complementares</h2>
+                    <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                      {complementary.map((comp) => {
+                        const CompIcon = iconMap[comp.icon] || FileCheck;
+                        return (
+                          <Link key={comp.slug} href={`/servicos/${comp.slug}`} className="group flex gap-4 rounded-lg border border-copper/20 bg-copper/5 p-5 transition-all hover:border-copper hover:shadow-md dark:border-copper/20 dark:bg-copper/5">
+                            <CompIcon className="h-6 w-6 flex-shrink-0 text-copper" />
+                            <div>
+                              <h3 className="font-semibold text-navy group-hover:text-copper dark:text-offwhite">{comp.title}</h3>
+                              <p className="mt-1 text-sm text-charcoal/60 line-clamp-2 dark:text-gray-400">{comp.description}</p>
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                {/* Sub-services (kept for backward compat) */}
+                {relatedSubs.length > 0 && (
+                  <div className="mt-10">
+                    <h2 className="font-heading text-2xl text-navy dark:text-offwhite">Serviços Relacionados</h2>
                     <div className="mt-4 grid gap-4 sm:grid-cols-2">
                       {relatedSubs.map((sub) => {
                         const SubIcon = iconMap[sub.icon] || FileCheck;
@@ -137,7 +166,7 @@ export default async function ServicePage({
                       Outros serviços de {service.category === "regularizacao" ? "regularização" : "engenharia"}
                     </h3>
                     <nav className="space-y-2">
-                      {categoryServices.slice(0, 6).map((s) => (
+                      {categoryServices.slice(0, 8).map((s) => (
                         <Link key={s.slug} href={`/servicos/${s.slug}`} className="flex items-center gap-2 rounded-btn px-3 py-2 text-sm text-charcoal/60 transition-colors hover:bg-copper/10 hover:text-navy dark:text-gray-400 dark:hover:text-copper-light">
                           <ArrowRight className="h-3 w-3" /> {s.title}
                         </Link>
