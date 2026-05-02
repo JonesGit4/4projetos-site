@@ -54,12 +54,26 @@ export function Footer() {
           <div>
             <h4 className="mb-4 text-xs font-bold uppercase tracking-wider text-copper-light">Navegação</h4>
             <nav className="space-y-2">
-              {["Início|/", "Sobre|/sobre", "Cases|/cases", "Blog|/blog", "Contato|/contato"].map((item) => {
+              {["Início|/", "Sobre|/sobre", "Cases|/cases", "Blog|/blog", "Preços|/precos", "Contato|/contato"].map((item) => {
                 const [label, href] = item.split("|");
                 return (
                   <Link key={href} href={href} className="block text-sm text-white/40 transition-colors hover:text-copper-light">{label}</Link>
                 );
               })}
+            </nav>
+
+            <h4 className="mb-4 mt-8 text-xs font-bold uppercase tracking-wider text-copper-light">Regiões</h4>
+            <nav className="space-y-2">
+              {[
+                { label: "Centro", href: "/bairros/centro" },
+                { label: "Jurerê", href: "/bairros/jurere" },
+                { label: "Lagoa da Conceição", href: "/bairros/lagoa-da-conceicao" },
+                { label: "Campeche", href: "/bairros/campeche" },
+                { label: "Trindade", href: "/bairros/trindade" },
+                { label: "Coqueiros", href: "/bairros/coqueiros" },
+              ].map((item) => (
+                <Link key={item.href} href={item.href} className="block text-sm text-white/40 transition-colors hover:text-copper-light">{item.label}</Link>
+              ))}
             </nav>
           </div>
         </div>
