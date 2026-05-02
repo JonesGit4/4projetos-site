@@ -153,13 +153,19 @@ export function Header() {
             )}
           </div>
 
-          {["Sobre", "Cases", "Blog", "Preços", "Contato"].map((item) => (
+          {[
+            { label: "Sobre", href: "/sobre" },
+            { label: "Cases", href: "/cases" },
+            { label: "Blog", href: "/blog" },
+            { label: "Preços", href: "/precos" },
+            { label: "Contato", href: "/contato" },
+          ].map((item) => (
             <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className="rounded-btn px-4 py-2 text-sm font-medium text-navy transition-colors hover:text-copper dark:text-copper-light dark:hover:text-white"
             >
-              {item}
+              {item.label}
             </Link>
           ))}
         </nav>
@@ -265,14 +271,20 @@ export function Header() {
               )}
             </div>
 
-            {["Sobre", "Cases", "Blog", "Preços", "Contato"].map((item) => (
+            {[
+              { label: "Sobre", href: "/sobre" },
+              { label: "Cases", href: "/cases" },
+              { label: "Blog", href: "/blog" },
+              { label: "Preços", href: "/precos" },
+              { label: "Contato", href: "/contato" },
+            ].map((item) => (
               <Link
-                key={item}
-                href={`/${item.toLowerCase()}`}
+                key={item.label}
+                href={item.href}
                 className="block rounded-btn px-4 py-3 text-sm font-medium text-navy hover:bg-copper/10 dark:text-copper-light dark:hover:bg-copper/10"
                 onClick={() => setMobileOpen(false)}
               >
-                {item}
+                {item.label}
               </Link>
             ))}
 
