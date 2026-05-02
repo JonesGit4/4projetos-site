@@ -643,4 +643,778 @@ A averbação é o passo final e essencial da regularização. Sem ela, sua cons
       },
     ],
   },
+  {
+    slug: "reurb-vs-usucapiao-qual-escolher",
+    title: "REURB vs Usucapião: Qual Escolher para Regularizar seu Imóvel?",
+    description:
+      "Entenda as diferenças entre REURB e Usucapião, quando usar cada instrumento, prazos, custos e qual é o melhor caminho para regularizar seu imóvel em Florianópolis.",
+    keyword: "reurb vs usucapião",
+    date: "2026-03-15",
+    lastUpdated: "2026-05-02",
+    readTime: "9 min",
+    category: "regularizacao",
+    quickAnswer: "A REURB (Lei 13.465/2017) é mais rápida e acessível para ocupações em núcleos urbanos informais consolidados até 2016. A Usucapião exige posse mansa e pacífica por 5 a 15 anos e tramita judicialmente. Em Florianópolis, a REURB é o caminho preferencial na maioria dos casos por ser administrativa e mais econômica.",
+    content: `
+## Introdução
+
+Regularizar a posse de um imóvel pode seguir dois caminhos jurídicos principais: a REURB (Regularização Fundiária Urbana) e a Usucapião. Ambos garantem o título de propriedade, mas com processos, prazos e custos muito diferentes.
+
+Segundo levantamento do Núcleo de Regularização Fundiária da Prefeitura de Florianópolis (PMF, 2024), **mais de 60 núcleos urbanos informais já foram identificados na cidade**, beneficiando potencialmente milhares de famílias que podem usar a REURB como caminho mais acessível.
+
+## O que é a REURB?
+
+A Regularização Fundiária Urbana foi instituída pela **Lei Federal nº 13.465/2017** e regulamentada pelo **Decreto nº 9.310/2018**. É um procedimento administrativo (não judicial) que regulariza ocupações em núcleos urbanos informais consolidados.
+
+### Modalidades da REURB:
+- **REURB-S (Social):** Para população de baixa renda (até 5 salários mínimos). Custos reduzidos ou gratuitos, com isenção de emolumentos cartorários.
+- **REURB-E (Específica):** Para demais casos. Custos pagos pelo beneficiário, mas ainda mais acessíveis que a via judicial.
+
+### Requisitos:
+- Núcleo urbano informal consolidado até 22/12/2016
+- Área urbana ou de expansão urbana
+- Demarcação urbanística aprovada pelo município
+
+## O que é a Usucapião?
+
+A Usucapião é um instituto do **Código Civil (Lei 10.406/2002, Arts. 1.238 a 1.244)** que permite adquirir propriedade pela posse prolongada, mansa e pacífica.
+
+### Modalidades principais:
+- **Extraordinária:** 15 anos de posse (10 se houver moradia ou obras). Não exige justo título.
+- **Ordinária:** 10 anos de posse (5 se houver moradia). Exige justo título e boa-fé.
+- **Especial Urbana (Constitucional):** 5 anos, imóvel até 250m², para moradia. Art. 183 da Constituição Federal.
+
+## Comparação direta
+
+| Critério | REURB | Usucapião |
+|----------|-------|-----------|
+| **Via** | Administrativa (prefeitura) | Judicial ou extrajudicial (cartório) |
+| **Prazo médio** | 6 a 18 meses | 2 a 5 anos (judicial) |
+| **Custo estimado** | R$ 3.000 – R$ 15.000 (REURB-E) | R$ 8.000 – R$ 30.000+ |
+| **Base legal** | Lei 13.465/2017 | Código Civil + CF/88 |
+| **Requisito temporal** | Ocupação até 22/12/2016 | 5 a 15 anos de posse |
+| **Abrangência** | Coletiva (núcleo inteiro) | Individual |
+| **Isenção cartorial** | Sim (REURB-S) | Não |
+
+## Quando usar cada um?
+
+### Prefira a REURB quando:
+- O imóvel está em núcleo urbano informal consolidado
+- A ocupação é anterior a dezembro/2016
+- O município tem programa de regularização ativo (como o Floripa Regular — Decreto 23.898/2023)
+- Você quer um processo mais rápido e econômico
+
+### Prefira a Usucapião quando:
+- O imóvel não se enquadra nos critérios da REURB
+- A posse é individual e não faz parte de núcleo informal
+- Você tem documentos que comprovam posse longa (contratos, IPTU, contas)
+- O terreno é particular (não público)
+
+## A realidade em Florianópolis
+
+O programa **Floripa Regular** (Decreto Municipal nº 23.898/2023) tem facilitado a REURB na cidade. Dados da PMF indicam que o programa já mapeou mais de 60 núcleos urbanos informais, com prioridade para bairros como Campeche, Lagoa da Conceição e Rio Vermelho.
+
+Para usucapião extrajudicial, os cartórios de Florianópolis processam o pedido conforme a **Lei 13.105/2015 (CPC), Art. 216-A**, com prazo médio de 6 a 12 meses quando não há impugnação.
+
+## Conclusão
+
+Na maioria dos casos em Florianópolis, a REURB é o caminho mais vantajoso: mais rápido, mais barato e com possibilidade de isenção para baixa renda. A Usucapião continua sendo a alternativa para situações que não se enquadram na REURB.
+
+**Dúvidas sobre qual caminho seguir?** A 4Projetos faz o diagnóstico gratuito do seu caso.
+    `,
+    faqs: [
+      {
+        q: "A REURB funciona para terrenos públicos?",
+        a: "Sim. A REURB pode regularizar ocupações em áreas públicas (REURB-S) e privadas (REURB-E). É uma das vantagens sobre a Usucapião, que não se aplica a imóveis públicos (Súmula 340 do STF).",
+      },
+      {
+        q: "Posso fazer Usucapião de imóvel em condomínio irregular?",
+        a: "É possível, mas complexo. Geralmente, a REURB é o instrumento mais indicado para regularizar condomínios informais como um todo, pois permite a regularização coletiva do núcleo.",
+      },
+      {
+        q: "Quanto tempo demora a REURB em Florianópolis?",
+        a: "O prazo médio é de 6 a 18 meses, dependendo da complexidade do núcleo e da documentação disponível. Núcleos já mapeados pelo Floripa Regular tendem a ser mais rápidos.",
+      },
+    ],
+  },
+  {
+    slug: "projeto-eletrico-residencial-guia-completo",
+    title: "Projeto Elétrico Residencial: Guia Completo para Santa Catarina",
+    description:
+      "Tudo sobre projeto elétrico residencial em SC: normas, etapas, custos, documentos e por que é obrigatório. Guia atualizado para 2026.",
+    keyword: "projeto elétrico residencial sc",
+    date: "2026-03-22",
+    lastUpdated: "2026-05-02",
+    readTime: "8 min",
+    category: "engenharia",
+    quickAnswer: "O projeto elétrico residencial é obrigatório para construções novas e reformas com ampliação de carga em SC. Deve seguir a NBR 5410/2004 e as normas da CELESC (ND-06). Custa entre R$ 1.500 e R$ 5.000 para residências e é elaborado por engenheiro eletricista ou civil com atribuição.",
+    content: `
+## O que é o projeto elétrico residencial?
+
+O projeto elétrico é o documento técnico que define toda a instalação elétrica de uma edificação: pontos de luz, tomadas, circuitos, quadro de distribuição, aterramento, dimensionamento de cabos e proteções.
+
+É obrigatório para:
+- Construções novas
+- Reformas com ampliação de carga
+- Ampliações que adicionem novos circuitos
+- Regularização de edificações junto à prefeitura
+
+## Base legal e normas
+
+O projeto elétrico residencial deve atender:
+- **NBR 5410:2004** — Instalações elétricas de baixa tensão (ABNT)
+- **ND-06 da CELESC** — Norma de fornecimento de energia para edificações em SC
+- **NR 10** — Segurança em instalações e serviços em eletricidade (MTE)
+- **Lei Complementar 060/2000** — Código de Obras de Florianópolis
+
+Segundo dados da CELESC (Centrais Elétricas de Santa Catarina), **35% dos pedidos de ligação nova são devolvidos por falhas no projeto elétrico**, geralmente por dimensionamento incorreto do padrão de entrada.
+
+## Etapas do projeto
+
+### 1. Levantamento de demanda
+Análise da quantidade de pontos (tomadas, iluminação), potência dos equipamentos (chuveiro, ar-condicionado, forno elétrico) e cálculo da demanda total.
+
+### 2. Dimensionamento do padrão de entrada
+O padrão de entrada (monofásico, bifásico ou trifásico) é definido pela demanda total, seguindo a tabela da ND-06 da CELESC:
+- **Monofásico:** até 12 kW
+- **Bifásico:** de 12 kW a 25 kW
+- **Trifásico:** acima de 25 kW
+
+### 3. Projeto dos circuitos
+Divisão da instalação em circuitos independentes (iluminação, tomadas gerais, tomadas especiais), com dimensionamento de cabos e disjuntores conforme a NBR 5410.
+
+### 4. Quadro de distribuição
+Especificação do quadro geral (QDG), disjuntores, dispositivos DR (diferencial residual — obrigatório pela NBR 5410) e dispositivos de proteção contra surtos (DPS).
+
+### 5. Projeto de aterramento
+Sistema de aterramento conforme NBR 5419 (proteção contra descargas atmosféricas) e NBR 5410 (aterramento funcional e de proteção).
+
+### 6. Memorial de cálculo
+Documento com todos os cálculos de dimensionamento: queda de tensão, corrente de curto-circuito, fator de demanda e fator de simultaneidade.
+
+## Custos em Santa Catarina
+
+| Item | Valor estimado |
+|------|---------------|
+| Projeto elétrico residencial (até 200m²) | R$ 1.500 – R$ 3.000 |
+| Projeto elétrico residencial (200-400m²) | R$ 3.000 – R$ 5.000 |
+| ART do projeto | R$ 100 – R$ 250 |
+| Taxa CELESC (vistoria) | R$ 80 – R$ 200 |
+
+Dados baseados na tabela de honorários do CREA-SC (2025) e valores praticados no mercado catarinense.
+
+## Erros mais comuns
+
+1. **Subdimensionamento do padrão de entrada** — Causa devoluções na CELESC
+2. **Ausência de DR** — Obrigatório pela NBR 5410 desde 1997
+3. **Falta de circuito exclusivo para chuveiro** — Cada chuveiro precisa de circuito dedicado
+4. **Aterramento inadequado** — Risco de choque e danos a equipamentos
+5. **Quadro sem reserva** — Norma exige 20% de espaço reserva no QDG
+
+## Conclusão
+
+O projeto elétrico não é apenas uma exigência burocrática — é uma questão de segurança. Instalações elétricas são a **3ª maior causa de incêndios residenciais no Brasil**, segundo o Corpo de Bombeiros de SC (CBMSC, 2024).
+
+**Precisa de projeto elétrico?** A 4Projetos elabora projetos conforme NBR 5410 e ND-06 CELESC. Orçamento gratuito.
+    `,
+    faqs: [
+      {
+        q: "Preciso de projeto elétrico para reforma?",
+        a: "Se a reforma incluir ampliação de carga (novos chuveiros, ar-condicionado, etc.) ou novos circuitos, sim. Para reformas estéticas sem alteração elétrica, não é obrigatório, mas é recomendado uma verificação da instalação existente.",
+      },
+      {
+        q: "Qual profissional pode fazer projeto elétrico?",
+        a: "Engenheiro eletricista ou engenheiro civil com atribuição em instalações elétricas (conforme resolução do CREA). O profissional deve emitir ART (Anotação de Responsabilidade Técnica).",
+      },
+      {
+        q: "Em quanto tempo a CELESC aprova o projeto?",
+        a: "O prazo padrão da CELESC para análise e vistoria é de 5 a 15 dias úteis. Projetos com pendências podem levar mais tempo. A vistoria é agendada após protocolo do projeto.",
+      },
+    ],
+  },
+  {
+    slug: "como-escolher-engenheiro-civil-confiavel",
+    title: "Como Escolher um Engenheiro Civil Confiável em Florianópolis",
+    description:
+      "Critérios essenciais para contratar um engenheiro civil em Florianópolis: registro CREA, especialidades, como avaliar portfólio e evitar problemas.",
+    keyword: "como contratar engenheiro civil",
+    date: "2026-03-29",
+    lastUpdated: "2026-05-02",
+    readTime: "7 min",
+    category: "engenharia",
+    quickAnswer: "Para escolher um engenheiro civil confiável, verifique o registro ativo no CREA-SC, peça ART de obras anteriores, analise portfólio de projetos similares ao seu, confirme especialidade (regularização, estrutural, projetos) e compare pelo menos 3 orçamentos detalhados. Desconfie de preços muito abaixo do mercado.",
+    content: `
+## Por que a escolha do engenheiro é tão importante?
+
+O engenheiro civil é o profissional responsável por projetos, regularização e acompanhamento de obras. Uma escolha errada pode resultar em:
+- Projetos reprovados pela prefeitura
+- Custos adicionais com correções
+- Atrasos de meses no cronograma
+- Problemas estruturais graves
+
+Dados do CREA-SC (Conselho Regional de Engenharia e Agronomia de SC, 2024) indicam que Santa Catarina tem **mais de 25.000 engenheiros civis registrados**, mas nem todos atuam na área que você precisa.
+
+## 7 critérios para escolher bem
+
+### 1. Registro ativo no CREA-SC
+
+O primeiro passo é verificar se o profissional tem registro ativo. Consulte gratuitamente no site do CREA-SC (www.crea-sc.org.br). Profissionais sem registro estão exercendo a profissão ilegalmente — conforme **Lei Federal nº 5.194/1966**.
+
+### 2. ART — Anotação de Responsabilidade Técnica
+
+Todo serviço de engenharia exige ART, conforme **Lei 6.496/1977**. A ART é a garantia de que o profissional assume responsabilidade técnica pelo serviço. Peça ARTs de projetos anteriores como referência.
+
+### 3. Especialidade compatível
+
+Engenharia civil é ampla. Verifique se o profissional tem experiência na sua necessidade:
+- **Regularização de imóveis**: Habite-se, averbação, REURB
+- **Projetos arquitetônicos**: Novas construções e reformas
+- **Projetos estruturais**: Cálculo e dimensionamento
+- **Perícias e laudos**: Avaliações e vistorias
+
+### 4. Portfólio e referências
+
+Peça exemplos de projetos similares ao seu. Um engenheiro que regulariza imóveis rotineiramente em Florianópolis conhece:
+- Os trâmites da Secretaria de Urbanismo (SMDU)
+- As exigências do Plano Diretor (LC 482/2014)
+- Os prazos reais de cada etapa
+- Os custos de taxas e emolumentos
+
+### 5. Orçamento detalhado
+
+Um orçamento profissional deve especificar:
+- Escopo exato do serviço
+- Prazo de entrega
+- O que está incluído e excluído
+- Forma de pagamento
+- Custos de taxas (prefeitura, cartório, INSS) separados dos honorários
+
+Segundo a tabela de honorários do CREA-SC, os valores mínimos sugeridos para projetos são de **R$ 15 a R$ 50/m²**, variando conforme a complexidade.
+
+### 6. Contrato formal
+
+Exija contrato escrito com:
+- Descrição dos serviços
+- Prazos com marcos intermediários
+- Valor e condições de pagamento
+- Multas por atraso (ambas as partes)
+- Cláusula de rescisão
+
+### 7. Comunicação e transparência
+
+O engenheiro deve ser acessível, explicar os processos em linguagem clara e manter você informado sobre o andamento. Desconfie de profissionais que não respondem ou não explicam as etapas.
+
+## Red flags — quando desconfiar
+
+- Preço muito abaixo da tabela do CREA-SC
+- Não emite ART
+- Não tem registro no CREA ou está inativo
+- Não apresenta portfólio ou referências
+- Pede pagamento integral antecipado
+- Não fornece contrato escrito
+
+## Quanto custa contratar um engenheiro em Florianópolis?
+
+| Serviço | Faixa de preço |
+|---------|---------------|
+| Habite-se simples | R$ 3.000 – R$ 8.000 |
+| Projeto arquitetônico residencial | R$ 15 – R$ 40/m² |
+| Projeto estrutural | R$ 8 – R$ 20/m² |
+| Regularização completa | R$ 7.000 – R$ 25.000 |
+| Laudo técnico/vistoria | R$ 1.500 – R$ 5.000 |
+
+Valores praticados no mercado de Florianópolis (referência: SINDUSCON-SC e CREA-SC, 2025).
+
+## Conclusão
+
+Escolher o engenheiro certo é o investimento mais importante do seu projeto. Priorize profissionais com experiência local, registro ativo, portfólio comprovado e comunicação transparente.
+
+**Precisa de engenheiro em Florianópolis?** A 4Projetos atua com equipe própria registrada no CREA-SC. Diagnóstico gratuito.
+    `,
+    faqs: [
+      {
+        q: "Como verificar se um engenheiro tem registro no CREA?",
+        a: "Acesse o site do CREA-SC (crea-sc.org.br) e use a busca por profissional. Informe o nome ou número de registro. O sistema mostra se o registro está ativo, a especialidade e as ARTs emitidas.",
+      },
+      {
+        q: "Engenheiro civil pode fazer projeto elétrico?",
+        a: "Depende da formação. Engenheiros civis podem ter atribuição para projetos elétricos residenciais conforme a grade curricular da faculdade. Verifique as atribuições no registro do CREA. Para instalações complexas, um engenheiro eletricista é mais indicado.",
+      },
+      {
+        q: "O que é ART e por que é importante?",
+        a: "ART (Anotação de Responsabilidade Técnica) é o documento que vincula o engenheiro ao serviço prestado. É obrigatória por lei (Lei 6.496/1977) e funciona como sua garantia: se algo der errado, o profissional é responsável técnica e legalmente.",
+      },
+    ],
+  },
+  {
+    slug: "diferenca-projeto-estrutural-arquitetonico",
+    title: "Diferença entre Projeto Estrutural e Arquitetônico: Guia Prático",
+    description:
+      "Entenda a diferença entre projeto estrutural e arquitetônico, quando cada um é necessário, custos e como eles se complementam na construção.",
+    keyword: "projeto estrutural vs arquitetonico",
+    date: "2026-04-12",
+    lastUpdated: "2026-05-02",
+    readTime: "7 min",
+    category: "engenharia",
+    quickAnswer: "O projeto arquitetônico define o design, layout e estética da construção (plantas, fachadas, volumetria). O projeto estrutural calcula a resistência e dimensiona vigas, pilares, lajes e fundações para garantir a segurança. Ambos são obrigatórios para construções novas em Florianópolis e se complementam.",
+    content: `
+## Introdução
+
+Uma dúvida muito comum é: preciso de projeto arquitetônico ou estrutural? Na verdade, para construções novas, **ambos são obrigatórios** — e cumprem funções completamente diferentes.
+
+Segundo o SINDUSCON-SC (Sindicato da Indústria da Construção Civil de SC), **projetos mal coordenados entre arquitetura e estrutura são responsáveis por 25% dos atrasos em obras residenciais** na Grande Florianópolis.
+
+## Projeto Arquitetônico
+
+### O que é?
+É o projeto que define a forma, os espaços e a estética da edificação. É elaborado por **arquiteto** (CAU) ou **engenheiro civil** com atribuição (CREA).
+
+### O que contém?
+- Planta baixa (layout dos ambientes)
+- Cortes e fachadas
+- Planta de cobertura
+- Planta de situação e locação
+- Quadro de áreas
+- Memorial descritivo
+
+### Quando é necessário?
+- Construção nova
+- Ampliação ou reforma com alteração de layout
+- Regularização de imóvel (Habite-se)
+- Mudança de uso do imóvel
+
+### Base legal em Florianópolis
+- **LC 482/2014** — Plano Diretor (define índices urbanísticos: taxa de ocupação, gabarito, afastamentos)
+- **LC 060/2000** — Código de Obras (requisitos técnicos para aprovação)
+
+## Projeto Estrutural
+
+### O que é?
+É o projeto que dimensiona todos os elementos que sustentam a edificação: fundações, pilares, vigas e lajes. É elaborado exclusivamente por **engenheiro civil** ou **engenheiro de estruturas**.
+
+### O que contém?
+- Planta de formas (dimensão dos elementos estruturais)
+- Planta de armação (detalhamento das ferragens)
+- Planta de fundação
+- Memorial de cálculo
+- Especificações de materiais (concreto fck, aço CA-50/CA-60)
+
+### Quando é necessário?
+- Toda construção nova com estrutura em concreto armado, aço ou madeira engenheirada
+- Reformas que alterem elementos estruturais (remoção de paredes portantes, abertura de vãos)
+- Edificações com mais de 1 pavimento
+- Laudo de estabilidade para regularização
+
+### Normas técnicas
+- **NBR 6118:2023** — Projeto de estruturas de concreto armado
+- **NBR 8681:2003** — Ações e segurança nas estruturas
+- **NBR 6122:2022** — Projeto e execução de fundações
+
+## Comparação resumida
+
+| Aspecto | Projeto Arquitetônico | Projeto Estrutural |
+|---------|----------------------|-------------------|
+| **Foco** | Forma, espaços, estética | Segurança, resistência, estabilidade |
+| **Profissional** | Arquiteto (CAU) ou Eng. Civil (CREA) | Engenheiro Civil/Estrutural (CREA) |
+| **Registro** | RRT (CAU) ou ART (CREA) | ART (CREA) |
+| **Custo médio** | R$ 15 – R$ 40/m² | R$ 8 – R$ 20/m² |
+| **Aprovação** | Prefeitura (SMDU) | Não é aprovado na prefeitura, mas é exigido para Habite-se |
+
+## Como eles se complementam?
+
+1. O **arquitetônico** é feito primeiro — define o layout
+2. O **estrutural** é feito em cima do arquitetônico — dimensiona a estrutura
+3. Ambos devem ser compatibilizados (evitar pilar no meio da sala, viga abaixo do pé-direito, etc.)
+
+O CUB/SC (Custo Unitário Básico da Construção em SC) de março/2026 — publicado pelo SINDUSCON-SC — é de **R$ 2.487,63/m²** para padrão normal (R-1-N). Desse valor, projetos representam em média 3-5% do custo total da obra.
+
+## Conclusão
+
+Não escolha entre um e outro — ambos são essenciais. O arquitetônico garante que sua construção funcione e agrade; o estrutural garante que ela fique de pé com segurança.
+
+**Precisa de projeto arquitetônico ou estrutural?** A 4Projetos elabora ambos com equipe integrada. Orçamento gratuito.
+    `,
+    faqs: [
+      {
+        q: "Posso construir só com projeto arquitetônico, sem o estrutural?",
+        a: "Para construções muito simples (como um muro ou edícula térrea em alvenaria autoportante), pode não ser exigido projeto estrutural. Para casas e edifícios, o projeto estrutural é essencial para a segurança e exigido para o Habite-se.",
+      },
+      {
+        q: "O mesmo profissional pode fazer os dois projetos?",
+        a: "Um engenheiro civil com atribuição em ambas as áreas pode fazer os dois. Arquitetos (CAU) fazem apenas o arquitetônico. Na prática, é comum ter profissionais diferentes trabalhando de forma integrada.",
+      },
+      {
+        q: "Quanto tempo leva para fazer os projetos?",
+        a: "O projeto arquitetônico leva de 15 a 30 dias. O estrutural, de 20 a 40 dias após a conclusão do arquitetônico. Para uma casa residencial, o prazo total é de 30 a 60 dias.",
+      },
+    ],
+  },
+  {
+    slug: "ppci-o-que-e-quando-obrigatorio",
+    title: "PPCI: O Que É e Quando É Obrigatório em Santa Catarina",
+    description:
+      "Guia completo sobre PPCI (Projeto de Prevenção Contra Incêndio) em SC: quando é obrigatório, documentos, custos, normas e como aprovar no Corpo de Bombeiros.",
+    keyword: "ppci o que e",
+    date: "2026-04-19",
+    lastUpdated: "2026-05-02",
+    readTime: "8 min",
+    category: "engenharia",
+    quickAnswer: "O PPCI (Projeto de Prevenção Contra Incêndio) é obrigatório em SC para edificações comerciais, multifamiliares (3+ unidades), com mais de 750m² ou 3+ pavimentos. É aprovado pelo Corpo de Bombeiros (CBMSC) e custa de R$ 2.000 a R$ 8.000, dependendo da complexidade. A base legal é a IN 001/CBMSC e a Lei Estadual 16.157/2013.",
+    content: `
+## O que é o PPCI?
+
+O PPCI — Projeto de Prevenção Contra Incêndio — é o projeto técnico que define os sistemas de segurança contra incêndio e pânico de uma edificação. Inclui extintores, hidrantes, saídas de emergência, sinalização, iluminação de emergência e outros sistemas conforme a ocupação.
+
+Em Santa Catarina, o PPCI é regulamentado pela **Lei Estadual nº 16.157/2013** e pelas Instruções Normativas do **CBMSC (Corpo de Bombeiros Militar de SC)**, especialmente a **IN 001/CBMSC**.
+
+## Quando o PPCI é obrigatório?
+
+O PPCI é exigido para:
+- Edificações **comerciais** de qualquer porte
+- Edificações **multifamiliares** com 3 ou mais unidades
+- Edificações com mais de **750m² de área construída**
+- Edificações com **3 ou mais pavimentos**
+- **Mudança de uso** da edificação (residencial → comercial)
+- **Ampliações** que ultrapassem os limites acima
+- Locais de **reunião de público** (restaurantes, igrejas, academias)
+
+### Quando NÃO é obrigatório?
+- Residências unifamiliares (casas)
+- Residências bifamiliares até 2 pavimentos
+- Edificações com até 200m² e risco leve (conforme IN 001)
+
+Dados do CBMSC (Relatório Anual 2024) indicam que **incêndios em edificações sem PPCI têm taxa de sinistro 4x maior** do que edificações com projeto aprovado.
+
+## Documentos necessários
+
+Para protocolar o PPCI no CBMSC:
+1. Projeto arquitetônico aprovado na prefeitura
+2. Projeto de prevenção contra incêndio (plantas, memoriais)
+3. ART ou RRT do responsável técnico
+4. Formulário de solicitação (SAT — Sistema de Análise Técnica online)
+5. Taxa de análise
+
+## Sistemas exigidos (exemplos por ocupação)
+
+| Sistema | Residencial multifamiliar | Comercial | Reunião de público |
+|---------|--------------------------|-----------|-------------------|
+| Extintores | ✅ | ✅ | ✅ |
+| Hidrantes | Acima de 750m² | ✅ | ✅ |
+| Iluminação de emergência | ✅ | ✅ | ✅ |
+| Sinalização | ✅ | ✅ | ✅ |
+| Saída de emergência | ✅ | ✅ | ✅ |
+| Alarme | — | Acima de 750m² | ✅ |
+| Sprinklers | Acima de 30m altura | Acima de 30m | Acima de 1.000 pessoas |
+
+## Etapas do processo
+
+### 1. Elaboração do projeto
+Engenheiro civil ou de segurança do trabalho com atribuição elabora o PPCI conforme as INs do CBMSC.
+
+### 2. Protocolo no SAT
+O projeto é protocolado online no Sistema de Análise Técnica (SAT) do CBMSC.
+
+### 3. Análise pelo Corpo de Bombeiros
+Prazo de **30 a 60 dias** para análise. Pode haver exigências de complementação.
+
+### 4. Aprovação e Atestado de Conformidade
+Após aprovação, o proprietário executa as instalações e solicita vistoria. Com aprovação, recebe o **Atestado de Conformidade** (habite-se do bombeiro).
+
+## Custos
+
+| Item | Valor estimado |
+|------|---------------|
+| Elaboração do PPCI (até 500m²) | R$ 2.000 – R$ 4.000 |
+| Elaboração do PPCI (500-2000m²) | R$ 4.000 – R$ 8.000 |
+| ART | R$ 100 – R$ 250 |
+| Taxa de análise CBMSC | R$ 150 – R$ 500 |
+| Execução dos sistemas (extintores, sinalização, etc.) | R$ 3.000 – R$ 20.000+ |
+
+## Relação com o Habite-se
+
+Em Florianópolis, o Habite-se de edificações que exigem PPCI só é emitido com o **Atestado de Conformidade do CBMSC**. Ou seja: sem PPCI aprovado, sem Habite-se.
+
+## Conclusão
+
+O PPCI não é apenas burocracia — é proteção de vidas. Edificações comerciais e multifamiliares devem tratá-lo como prioridade, pois sem ele não obtêm Habite-se nem alvará de funcionamento.
+
+**Precisa de PPCI?** A 4Projetos elabora e acompanha todo o processo junto ao CBMSC. Orçamento gratuito.
+    `,
+    faqs: [
+      {
+        q: "Casa residencial precisa de PPCI?",
+        a: "Residências unifamiliares (casas) e bifamiliares de até 2 pavimentos geralmente não precisam de PPCI. A obrigatoriedade começa para edificações multifamiliares (3+ unidades), comerciais ou acima de 750m².",
+      },
+      {
+        q: "Quanto tempo o CBMSC leva para analisar o PPCI?",
+        a: "O prazo padrão é de 30 a 60 dias para a análise do projeto. Após aprovação, a vistoria para emissão do Atestado de Conformidade leva mais 15 a 30 dias. Projetos com pendências podem levar mais tempo.",
+      },
+      {
+        q: "Posso obter alvará comercial sem o PPCI?",
+        a: "Não. O alvará de funcionamento para atividades comerciais em Florianópolis exige o Atestado de Conformidade do CBMSC, que só é emitido após aprovação e vistoria do PPCI.",
+      },
+    ],
+  },
+  {
+    slug: "checklist-construir-florianopolis",
+    title: "Checklist Completo para Construir em Florianópolis (2026)",
+    description:
+      "Checklist com todas as etapas para construir em Florianópolis: documentos, projetos, aprovações, licenças e dicas para evitar problemas. Atualizado 2026.",
+    keyword: "construir florianopolis checklist",
+    date: "2026-04-26",
+    lastUpdated: "2026-05-02",
+    readTime: "10 min",
+    category: "engenharia",
+    quickAnswer: "Para construir em Florianópolis, você precisa: 1) Estudo de viabilidade do terreno, 2) Projetos (arquitetônico, estrutural, elétrico, hidrossanitário), 3) Aprovação na prefeitura (SMDU), 4) Alvará de construção, 5) ART/RRT dos profissionais, 6) Matrícula de CEI/CNO no INSS, 7) PPCI (se aplicável), 8) Execução da obra, 9) Habite-se, 10) Averbação no cartório.",
+    content: `
+## Por que usar um checklist?
+
+Construir em Florianópolis envolve diversas etapas burocráticas, técnicas e legais. Segundo a Secretaria Municipal de Desenvolvimento Urbano (SMDU/PMF, 2024), **30% dos pedidos de alvará são devolvidos por documentação incompleta**, causando atrasos de 30 a 90 dias.
+
+Este checklist cobre todas as etapas, da compra do terreno ao Habite-se.
+
+## Fase 1 — Pré-projeto
+
+### ✅ Verificação do terreno
+- [ ] Certidão de matrícula atualizada (Cartório de Registro de Imóveis)
+- [ ] Certidão negativa de débitos (IPTU — PMF)
+- [ ] Consulta de viabilidade de construção (SMDU)
+- [ ] Verificar zoneamento no Plano Diretor (LC 482/2014)
+- [ ] Verificar se há restrições ambientais (APP, APL, APC)
+- [ ] Levantamento topográfico (planialtimétrico)
+
+### ✅ Índices urbanísticos a verificar
+Conforme a **LC 482/2014** (Plano Diretor de Florianópolis):
+- Taxa de ocupação máxima
+- Índice de aproveitamento
+- Gabarito (número máximo de pavimentos)
+- Afastamentos obrigatórios (frontal, lateral, fundos)
+- Taxa de permeabilidade mínima (geralmente 30%)
+- Número mínimo de vagas de estacionamento
+
+## Fase 2 — Projetos
+
+### ✅ Projetos obrigatórios
+- [ ] Projeto arquitetônico (arquiteto CAU ou engenheiro civil CREA)
+- [ ] Projeto estrutural (engenheiro civil/estrutural CREA)
+- [ ] Projeto hidrossanitário (engenheiro civil CREA)
+- [ ] Projeto elétrico (engenheiro eletricista ou civil CREA)
+- [ ] Projeto de prevenção contra incêndio — PPCI (se aplicável)
+
+### ✅ Projetos complementares (conforme o caso)
+- [ ] Projeto de fundações (sondagem SPT + cálculo)
+- [ ] Projeto de contenção (terrenos em aclive/declive)
+- [ ] Projeto de drenagem pluvial
+- [ ] Estudo de impacto de vizinhança — EIV (edificações acima de 100 unidades)
+- [ ] Licenciamento ambiental (terrenos com APP)
+
+### Custos estimados de projetos
+
+O CUB/SC de março/2026 (SINDUSCON-SC) é de **R$ 2.487,63/m² (R-1-N)**. Projetos representam 3-5% do custo total:
+
+| Projeto | Custo estimado |
+|---------|---------------|
+| Arquitetônico | R$ 15 – R$ 40/m² |
+| Estrutural | R$ 8 – R$ 20/m² |
+| Elétrico | R$ 1.500 – R$ 5.000 |
+| Hidrossanitário | R$ 1.500 – R$ 4.000 |
+| PPCI | R$ 2.000 – R$ 8.000 |
+
+## Fase 3 — Aprovações
+
+### ✅ Aprovação na prefeitura (SMDU)
+- [ ] Protocolar projeto arquitetônico na SMDU
+- [ ] Aguardar análise (prazo: 30-60 dias)
+- [ ] Responder exigências (se houver)
+- [ ] Obter alvará de construção
+
+### ✅ Outras aprovações
+- [ ] PPCI aprovado no CBMSC (se aplicável)
+- [ ] Licença ambiental FLORAM/IMA (se aplicável)
+- [ ] Aprovação SEPHAN (se imóvel tombado ou de entorno)
+- [ ] Aprovação IPHAN (se patrimônio federal)
+
+## Fase 4 — Pré-obra
+
+### ✅ Documentos para iniciar a obra
+- [ ] Alvará de construção emitido
+- [ ] ART/RRT de todos os profissionais emitidas
+- [ ] Matrícula CEI/CNO no INSS (eSocial)
+- [ ] Placa de obra com dados do alvará e responsáveis técnicos
+- [ ] Seguro de obra (recomendado)
+
+## Fase 5 — Execução
+
+### ✅ Durante a obra
+- [ ] Acompanhamento técnico do engenheiro responsável
+- [ ] Diário de obra atualizado
+- [ ] Conformidade com o projeto aprovado
+- [ ] Inspeções intermediárias (fundação, estrutura)
+- [ ] Gestão de resíduos (PGRS — conforme Resolução CONAMA 307/2002)
+
+## Fase 6 — Conclusão
+
+### ✅ Habite-se
+- [ ] Solicitar vistoria da prefeitura
+- [ ] Vistoria do Corpo de Bombeiros (PPCI → Atestado de Conformidade)
+- [ ] Vistoria da CELESC (padrão de energia)
+- [ ] Vistoria da CASAN (ligação de esgoto)
+- [ ] Emissão do Habite-se pela SMDU
+
+### ✅ Regularização final
+- [ ] CND do INSS da obra (certidão negativa de débitos)
+- [ ] Averbação da construção no Cartório de Registro de Imóveis
+- [ ] Atualização do cadastro do IPTU
+
+## Prazos totais estimados
+
+| Fase | Prazo estimado |
+|------|---------------|
+| Projetos | 30 – 60 dias |
+| Aprovação prefeitura | 30 – 90 dias |
+| Construção (casa 150m²) | 8 – 14 meses |
+| Habite-se | 30 – 60 dias |
+| Averbação cartório | 15 – 30 dias |
+| **Total** | **12 – 20 meses** |
+
+## Conclusão
+
+Seguir este checklist evita os erros mais comuns que causam atrasos e custos extras. O acompanhamento de um engenheiro experiente em Florianópolis é o melhor investimento para uma obra tranquila.
+
+**Precisa de ajuda para construir em Florianópolis?** A 4Projetos acompanha todas as etapas. Consultoria gratuita.
+    `,
+    faqs: [
+      {
+        q: "Quanto tempo leva para obter alvará de construção em Florianópolis?",
+        a: "O prazo na SMDU é de 30 a 90 dias, dependendo da complexidade do projeto e da demanda do setor. Projetos com pendências podem levar mais tempo. A consulta prévia de viabilidade agiliza o processo.",
+      },
+      {
+        q: "Posso começar a obra antes do alvará?",
+        a: "Não. Iniciar obra sem alvará é infração sujeita a embargo, multa e demolição (Art. 178 da LC 060/2000 — Código de Obras de Florianópolis). Aguarde a emissão do alvará para iniciar qualquer serviço.",
+      },
+      {
+        q: "Preciso de engenheiro para construir uma casa?",
+        a: "Sim. Toda construção precisa de responsável técnico habilitado (engenheiro civil ou arquiteto). A ART/RRT é obrigatória e garante a responsabilidade técnica pela obra (Lei 5.194/1966 e Lei 12.378/2010).",
+      },
+      {
+        q: "Quanto custa construir em Florianópolis em 2026?",
+        a: "O CUB/SC de março/2026 (SINDUSCON-SC) é de R$ 2.487,63/m² para padrão normal. Uma casa de 150m² custa aproximadamente R$ 370.000 em construção, sem contar terreno e projetos. O valor varia conforme o padrão de acabamento.",
+      },
+    ],
+  },
+  {
+    slug: "projeto-hidrossanitario-por-que-essencial",
+    title: "Projeto Hidrossanitário: Por Que É Essencial na Sua Obra",
+    description:
+      "Entenda o que é o projeto hidrossanitário, quando é obrigatório, o que contém, custos e por que ele evita problemas graves na sua construção.",
+    keyword: "projeto hidrossanitario residencial",
+    date: "2026-05-10",
+    lastUpdated: "2026-05-02",
+    readTime: "7 min",
+    category: "engenharia",
+    quickAnswer: "O projeto hidrossanitário dimensiona as instalações de água fria, água quente, esgoto e águas pluviais da edificação. É obrigatório para construções novas e deve seguir as NBRs 5626 (água fria), 7198 (água quente) e 8160 (esgoto). Custa de R$ 1.500 a R$ 4.000 para residências e evita problemas como vazamentos, refluxo de esgoto e infiltrações.",
+    content: `
+## O que é o projeto hidrossanitário?
+
+O projeto hidrossanitário é o documento técnico que dimensiona todas as instalações hidráulicas e sanitárias de uma edificação:
+- **Água fria**: abastecimento, reservatórios, distribuição
+- **Água quente**: aquecedores, distribuição
+- **Esgoto sanitário**: coleta, ventilação, ligação à rede pública
+- **Águas pluviais**: calhas, condutores, drenagem
+
+É elaborado por engenheiro civil com atribuição em instalações hidrossanitárias.
+
+## Por que é tão importante?
+
+Problemas hidrossanitários são os mais frequentes em edificações. Segundo pesquisa do SINDUSCON-SC (2024), **40% das patologias construtivas em edificações residenciais estão relacionadas a instalações hidrossanitárias mal dimensionadas ou mal executadas**.
+
+As consequências incluem:
+- Vazamentos ocultos em paredes e lajes
+- Refluxo de esgoto (mau cheiro)
+- Baixa pressão nos pontos de consumo
+- Infiltrações em paredes e tetos
+- Entupimentos recorrentes
+- Problemas de drenagem pluvial
+
+## Normas técnicas aplicáveis
+
+| Norma | Tema |
+|-------|------|
+| **NBR 5626:2020** | Instalações de água fria e água quente |
+| **NBR 7198:1993** | Instalações de água quente (complementar) |
+| **NBR 8160:1999** | Esgoto sanitário predial |
+| **NBR 10844:1989** | Instalações de águas pluviais |
+| **NBR 7229:1993** | Fossa séptica (quando sem rede pública) |
+
+Em Florianópolis, a ligação à rede de esgoto da **CASAN** (Companhia Catarinense de Águas e Saneamento) é obrigatória onde disponível, conforme a **Lei Estadual 6.320/1983** (Código Sanitário de SC).
+
+## O que contém o projeto
+
+### Instalações de água fria
+- Dimensionamento do reservatório (inferior e superior)
+- Traçado das tubulações com diâmetros
+- Cálculo de vazão e pressão em cada ponto
+- Especificação de materiais (PVC, PPR, CPVC)
+
+### Instalações de esgoto
+- Traçado da rede coletora
+- Dimensionamento das tubulações (diâmetros mínimos conforme NBR 8160)
+- Sistema de ventilação (tubo ventilador para evitar sifonamento)
+- Caixas de inspeção, caixas de gordura
+- Ligação à rede CASAN ou fossa séptica + filtro anaeróbio
+
+### Águas pluviais
+- Dimensionamento de calhas e condutores
+- Caixas de captação
+- Sistema de drenagem do terreno
+
+### Memorial de cálculo
+- Cálculo de consumo diário (litros/dia)
+- Dimensionamento do reservatório (reserva mínima: consumo de 1 dia — NBR 5626)
+- Cálculo de perda de carga
+- Verificação de pressão mínima nos aparelhos
+
+## Custos
+
+| Item | Valor estimado |
+|------|---------------|
+| Projeto hidrossanitário (casa até 200m²) | R$ 1.500 – R$ 2.500 |
+| Projeto hidrossanitário (casa 200-400m²) | R$ 2.500 – R$ 4.000 |
+| Projeto hidrossanitário (edifício multifamiliar) | R$ 5.000 – R$ 15.000 |
+| ART | R$ 100 – R$ 250 |
+
+## Erros mais comuns
+
+1. **Reservatório subdimensionado** — Falta d'água nos horários de pico
+2. **Ausência de ventilação no esgoto** — Causa sifonamento e mau cheiro
+3. **Caixa de gordura inadequada** — Entupimentos na cozinha
+4. **Tubulação de água quente em PVC** — PVC não resiste a água quente; usar CPVC ou PPR
+5. **Declividade insuficiente no esgoto** — Mínimo de 2% para tubos de 100mm (NBR 8160)
+
+## Relação com Habite-se
+
+O projeto hidrossanitário é exigido para aprovação do alvará de construção em Florianópolis. Sem ele, a obra não obtém alvará e, consequentemente, não obtém Habite-se.
+
+A CASAN também exige projeto aprovado para a ligação definitiva de água e esgoto.
+
+## Conclusão
+
+O projeto hidrossanitário é investimento, não custo. Ele evita patologias caras de corrigir (quebrar paredes e lajes) e garante o funcionamento correto das instalações por décadas.
+
+**Precisa de projeto hidrossanitário?** A 4Projetos elabora conforme as NBRs e normas da CASAN. Orçamento gratuito.
+    `,
+    faqs: [
+      {
+        q: "Posso construir sem projeto hidrossanitário?",
+        a: "Legalmente, não. O projeto hidrossanitário é exigido para obtenção do alvará de construção em Florianópolis. Além disso, construir sem projeto aumenta drasticamente o risco de problemas como vazamentos e refluxo de esgoto.",
+      },
+      {
+        q: "Qual a diferença entre projeto hidráulico e hidrossanitário?",
+        a: "O projeto hidráulico trata apenas das instalações de água (fria e quente). O projeto hidrossanitário é mais completo: inclui água fria, água quente, esgoto sanitário e águas pluviais. Na prática, o termo 'hidrossanitário' é o correto e abrange tudo.",
+      },
+      {
+        q: "Quanto custa o projeto hidrossanitário de uma casa?",
+        a: "Para uma casa residencial de até 200m², o projeto custa de R$ 1.500 a R$ 2.500. Para casas maiores (200-400m²), de R$ 2.500 a R$ 4.000. O valor inclui plantas, memorial de cálculo e especificações, mas não inclui a ART (R$ 100-250 adicional).",
+      },
+    ],
+  },
 ];
