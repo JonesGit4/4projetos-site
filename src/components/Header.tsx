@@ -153,7 +153,7 @@ export function Header() {
             )}
           </div>
 
-          {["Sobre", "Cases", "Blog", "Contato"].map((item) => (
+          {["Sobre", "Cases", "Blog", "Preços", "Contato"].map((item) => (
             <Link
               key={item}
               href={`/${item.toLowerCase()}`}
@@ -265,7 +265,7 @@ export function Header() {
               )}
             </div>
 
-            {["Sobre", "Cases", "Blog", "Contato"].map((item) => (
+            {["Sobre", "Cases", "Blog", "Preços", "Contato"].map((item) => (
               <Link
                 key={item}
                 href={`/${item.toLowerCase()}`}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, Tag, HelpCircle, RefreshCw } from "lucide-react";
 import { blogPosts } from "@/lib/blog-posts";
 import { BlogPostJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 import { CTASection } from "@/components/CTASection";
@@ -176,6 +176,22 @@ export default async function BlogPostPage({
           { name: post.title, href: `/blog/${post.slug}` },
         ]}
       />
+      {post.faqs && post.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: post.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.q,
+                acceptedAnswer: { "@type": "Answer", text: faq.a },
+              })),
+            }),
+          }}
+        />
+      )}
 
       {/* Hero */}
       <section className="bg-navy py-16 sm:py-24">
@@ -217,9 +233,50 @@ export default async function BlogPostPage({
         <div className="container-custom">
           <div className="grid gap-12 lg:grid-cols-3">
             <article className="lg:col-span-2">
+              {/* Quick Answer + Last Updated */}
+              <div className="mb-8 rounded-lg border-l-4 border-copper bg-copper/5 p-5 dark:bg-copper/10">
+                <p className="mb-1 text-xs font-bold uppercase tracking-wider text-copper">Resposta rápida</p>
+                <p className="leading-relaxed text-charcoal/80 dark:text-offwhite/70">{post.quickAnswer}</p>
+                <p className="mt-3 flex items-center gap-1.5 text-xs text-charcoal/40 dark:text-offwhite/30">
+                  <RefreshCw className="h-3 w-3" />
+                  Última atualização:{" "}
+                  {new Date(post.lastUpdated).toLocaleDateString("pt-BR", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </p>
+              </div>
+
               <div className="prose-custom max-w-none">
                 {renderContent(post.content)}
               </div>
+
+              {/* FAQ Section */}
+              {post.faqs && post.faqs.length > 0 && (
+                <div className="mt-12 border-t border-copper-light/20 pt-10 dark:border-navy-light/20">
+                  <h2 className="mb-6 font-heading text-2xl text-navy dark:text-offwhite">
+                    Perguntas Frequentes
+                  </h2>
+                  <div className="space-y-4">
+                    {post.faqs.map((faq, i) => (
+                      <details
+                        key={i}
+                        className="group rounded-lg border border-copper-light/10 bg-white transition-all open:border-copper/20 open:shadow-md dark:border-navy-light/20 dark:bg-navy-light/10"
+                      >
+                        <summary className="flex cursor-pointer items-center gap-3 p-4 font-medium text-navy dark:text-offwhite [&::-webkit-details-marker]:hidden">
+                          <HelpCircle className="h-5 w-5 flex-shrink-0 text-copper" />
+                          <span className="flex-1">{faq.q}</span>
+                          <span className="text-copper transition-transform group-open:rotate-45">+</span>
+                        </summary>
+                        <div className="border-t border-copper-light/10 px-4 pb-4 pt-3 dark:border-navy-light/20">
+                          <p className="leading-relaxed text-charcoal/70 dark:text-offwhite/60">{faq.a}</p>
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              )}
             </article>
 
             {/* Sidebar */}
