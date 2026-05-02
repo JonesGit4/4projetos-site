@@ -52,6 +52,21 @@ export const metadata: Metadata = {
     siteName: "4Projetos",
     locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "https://4projetos.com.br/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "4Projetos — Engenharia e Regularização de Imóveis em Florianópolis",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "4Projetos — Engenharia e Regularização de Imóveis",
+    description:
+      "Soluções completas em engenharia e regularização de imóveis em Florianópolis. Habite-se, REURB, projetos e mais.",
+    images: ["https://4projetos.com.br/og-image.jpg"],
   },
   alternates: {
     canonical: "https://4projetos.com.br",

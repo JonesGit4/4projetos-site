@@ -74,7 +74,7 @@ export function HeroSlider() {
                     {/* Logo FULL SIZE — transparent bg */}
                     <Image
                       src="/logo-dark.png"
-                      alt="4Projetos"
+                      alt="4Projetos — Engenharia e Regularização de Imóveis em Florianópolis"
                       width={600}
                       height={390}
                       className="mb-8 h-64 w-auto dark:hidden sm:h-80 md:h-[400px] lg:h-[480px]"
@@ -82,7 +82,7 @@ export function HeroSlider() {
                     />
                     <Image
                       src="/logo-light.png"
-                      alt="4Projetos"
+                      alt="4Projetos — Engenharia e Regularização de Imóveis em Florianópolis"
                       width={600}
                       height={390}
                       className="mb-8 hidden h-64 w-auto dark:block sm:h-80 md:h-[400px] lg:h-[480px]"
@@ -90,9 +90,12 @@ export function HeroSlider() {
                     />
 
                     <h1 className="mb-4 font-heading text-3xl leading-tight text-navy dark:text-offwhite sm:text-4xl md:text-5xl">
-                      {slide.headline}
+                      Engenharia e Regularização de Imóveis em Florianópolis
                     </h1>
 
+                    <p className="mb-2 font-heading text-xl text-copper dark:text-copper-light sm:text-2xl">
+                      {slide.headline}
+                    </p>
                     <p className="mb-8 max-w-xl text-lg leading-relaxed text-charcoal/60 dark:text-gray-400 sm:text-xl">
                       {slide.subline}
                     </p>
@@ -126,9 +129,9 @@ export function HeroSlider() {
 
                   <div className="container-custom relative z-10 px-4 lg:px-8">
                     <div className="max-w-3xl">
-                      <h1 className="mb-4 font-heading text-4xl leading-tight text-offwhite sm:text-5xl md:text-6xl lg:text-7xl">
+                      <h2 className="mb-4 font-heading text-4xl leading-tight text-offwhite sm:text-5xl md:text-6xl lg:text-7xl">
                         {slide.headline}
-                      </h1>
+                      </h2>
                       <p className="mb-8 max-w-xl text-lg leading-relaxed text-white/60 sm:text-xl">
                         {slide.subline}
                       </p>

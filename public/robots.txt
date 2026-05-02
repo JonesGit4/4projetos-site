@@ -3,3 +3,16 @@ Allow: /
 Disallow: /api/
 
 Sitemap: https://4projetos.com.br/sitemap.xml
+
+# AI Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /

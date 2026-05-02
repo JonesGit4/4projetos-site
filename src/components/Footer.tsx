@@ -11,7 +11,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Image
               src="/logo-light.png"
-              alt="4Projetos"
+              alt="4Projetos — Engenharia e Regularização de Imóveis"
               width={160}
               height={48}
               className="mb-4 h-12 w-auto"

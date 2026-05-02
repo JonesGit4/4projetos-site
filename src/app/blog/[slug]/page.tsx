@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react";
 import { blogPosts } from "@/lib/blog-posts";
-import { BlogPostJsonLd } from "@/components/JsonLd";
+import { BlogPostJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 import { CTASection } from "@/components/CTASection";
 
 export async function generateStaticParams() {
@@ -169,18 +169,24 @@ export default async function BlogPostPage({
         date={post.date}
         readTime={post.readTime}
       />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Início", href: "/" },
+          { name: "Blog", href: "/blog" },
+          { name: post.title, href: `/blog/${post.slug}` },
+        ]}
+      />
 
       {/* Hero */}
       <section className="bg-navy py-16 sm:py-24">
         <div className="container-custom px-4 lg:px-8">
-          <div className="mb-6">
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-1 text-sm text-copper-light/70 transition-colors hover:text-copper-light"
-            >
-              <ArrowLeft className="h-4 w-4" /> Voltar ao blog
-            </Link>
-          </div>
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex flex-wrap items-center gap-1 text-sm text-copper-light/70">
+              <li><Link href="/" className="transition-colors hover:text-copper-light">Início</Link></li>
+              <li className="before:mx-1 before:content-['/']"><Link href="/blog" className="transition-colors hover:text-copper-light">Blog</Link></li>
+              <li className="before:mx-1 before:content-['/'] text-copper-light line-clamp-1">{post.title}</li>
+            </ol>
+          </nav>
           <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-copper-light/60">
             {post.category === "regularizacao" ? "Regularização" : "Engenharia"}
           </p>

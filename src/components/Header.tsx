@@ -35,7 +35,7 @@ export function Header() {
         <Link href="/" className="flex-shrink-0">
           <Image
             src="/logo-dark.png"
-            alt="4Projetos"
+            alt="4Projetos — Página inicial"
             width={240}
             height={156}
             className={cn(
@@ -46,7 +46,7 @@ export function Header() {
           />
           <Image
             src="/logo-light.png"
-            alt="4Projetos"
+            alt="4Projetos — Página inicial"
             width={240}
             height={156}
             className={cn(

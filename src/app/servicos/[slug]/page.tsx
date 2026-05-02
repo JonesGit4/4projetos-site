@@ -8,6 +8,7 @@ import {
   ClipboardCheck, Search, FileText, UserCheck, FileEdit, Info,
 } from "lucide-react";
 import { services, subServices, getServiceSteps, getComplementaryServices } from "@/lib/services";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 const iconMap: Record<string, React.ElementType> = {
   FileCheck, Scale, Landmark, Receipt, BookOpen, Building2, Building, Ruler,
@@ -54,14 +55,23 @@ export default async function ServicePage({
 
   return (
     <div className="pt-[100px]">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Início", href: "/" },
+          { name: "Serviços", href: "/servicos" },
+          { name: service.title, href: `/servicos/${slug}` },
+        ]}
+      />
       {/* Hero */}
       <section className="bg-navy py-16 sm:py-24">
         <div className="container-custom px-4 lg:px-8">
-          <div className="mb-6">
-            <Link href="/servicos" className="inline-flex items-center gap-1 text-sm text-copper-light/70 transition-colors hover:text-copper-light">
-              <ArrowLeft className="h-4 w-4" /> Todos os serviços
-            </Link>
-          </div>
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex flex-wrap items-center gap-1 text-sm text-copper-light/70">
+              <li><Link href="/" className="transition-colors hover:text-copper-light">Início</Link></li>
+              <li className="before:mx-1 before:content-['/']"><Link href="/servicos" className="transition-colors hover:text-copper-light">Serviços</Link></li>
+              <li className="before:mx-1 before:content-['/'] text-copper-light">{service.title}</li>
+            </ol>
+          </nav>
           <div className="flex items-start gap-4">
             <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-copper/15">
               <Icon className="h-8 w-8 text-copper-light" />
